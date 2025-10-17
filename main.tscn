@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://brk25ygn7iwxb"]
+[gd_scene load_steps=3 format=3 uid="uid://brk25ygn7iwxb"]
 
 [ext_resource type="PackedScene" uid="uid://d1gpphkbcphic" path="res://player/player.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://qs60hkstdfot" path="res://furniture/furniture.tscn" id="2_0xm2m"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -9,3 +10,9 @@ position = Vector2(6, 1)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)
+
+[node name="Furniture" parent="." instance=ExtResource("2_0xm2m")]
+position = Vector2(90, -38)
+
+[node name="Furniture2" parent="." instance=ExtResource("2_0xm2m")]
+position = Vector2(-84, -83)

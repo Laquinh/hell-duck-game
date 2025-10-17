@@ -4,8 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://dylpn1fstocga" path="res://player/ghost.png" id="2_onrkg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sh265"]
+size = Vector2(24, 24)
 
 [node name="Player" type="CharacterBody2D"]
+z_index = 1
 script = ExtResource("1_4flbx")
 speed = 100.0
 
