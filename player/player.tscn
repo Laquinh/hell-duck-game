@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://d1gpphkbcphic"]
 
-[ext_resource type="Script" uid="uid://cshdedybrrd4v" path="res://player.gd" id="1_4flbx"]
-[ext_resource type="Texture2D" uid="uid://dylpn1fstocga" path="res://ghost.png" id="2_onrkg"]
+[ext_resource type="Script" uid="uid://cshdedybrrd4v" path="res://player/player.gd" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://dylpn1fstocga" path="res://player/ghost.png" id="2_onrkg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sh265"]
 
