@@ -7,7 +7,6 @@
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_4flbx")
-speed = 200.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_onrkg")
@@ -16,3 +15,5 @@ texture = ExtResource("2_onrkg")
 shape = SubResource("RectangleShape2D_sh265")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+visible = false
+enabled = false

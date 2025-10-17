@@ -1,18 +1,26 @@
 extends CharacterBody2D
 
-@export var speed: float = 10
+@export var speed: float = 200
+@export var acceleration: float = 1000
+@export var friction: float = 2200
 
 func _physics_process(delta: float) -> void:
-	velocity = Vector2.ZERO
+	var input = Vector2.ZERO
 
 	if Input.is_action_pressed("ui_right"):
-		velocity.x = 1
+		input.x += 1
 	if Input.is_action_pressed("ui_left"):
-		velocity.x = -1
+		input.x += -1
 	if Input.is_action_pressed("ui_down"):
-		velocity.y = 1
+		input.y += 1
 	if Input.is_action_pressed("ui_up"):
-		velocity.y = -1
+		input.y += -1
 
-	velocity = velocity.normalized() * speed
+	input = input.normalized()
+	
+	if input == Vector2.ZERO:
+		velocity = velocity.move_toward(Vector2.ZERO, friction * delta)
+	else:
+		velocity = velocity.move_toward(input * speed, acceleration * delta)
+
 	move_and_slide()
