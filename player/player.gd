@@ -37,7 +37,7 @@ func _input(event: InputEvent) -> void:
 			visible = true      
 		else:
 			for area in $Area2D.get_overlapping_areas():
-				if area.name.contains("Furniture"):
+				if area.is_in_group("Furniture"):
 					possessed_furniture = area
 					visible = false
 					break
