@@ -4,6 +4,8 @@ extends CharacterBody2D
 @export var acceleration: float = 1000
 @export var friction: float = 2200
 
+var possessed_furniture: Node2D = null
+
 func _physics_process(delta: float) -> void:
 	var input = Vector2.ZERO
 
@@ -24,3 +26,18 @@ func _physics_process(delta: float) -> void:
 		velocity = velocity.move_toward(input * speed, acceleration * delta)
 
 	move_and_slide()
+	
+	if possessed_furniture:
+		possessed_furniture.position = position
+
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("possess"):
+		if possessed_furniture:   
+			possessed_furniture = null
+			visible = true      
+		else:
+			for area in $Area2D.get_overlapping_areas():
+				if area.name.contains("Furniture"):
+					possessed_furniture = area
+					visible = false
+					break

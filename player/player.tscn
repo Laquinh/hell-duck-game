@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://d1gpphkbcphic"]
+[gd_scene load_steps=5 format=3 uid="uid://d1gpphkbcphic"]
 
 [ext_resource type="Script" uid="uid://cshdedybrrd4v" path="res://player/player.gd" id="1_4flbx"]
 [ext_resource type="Texture2D" uid="uid://dylpn1fstocga" path="res://player/ghost.png" id="2_onrkg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sh265"]
 size = Vector2(24, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rkbax"]
+size = Vector2(61, 59)
 
 [node name="Player" type="CharacterBody2D"]
 z_index = 1
@@ -14,11 +17,15 @@ speed = 100.0
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_onrkg")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_sh265")
-
 [node name="Camera2D" type="Camera2D" parent="."]
-visible = false
 zoom = Vector2(3, 3)
 position_smoothing_enabled = true
 position_smoothing_speed = 10.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_sh265")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_rkbax")
