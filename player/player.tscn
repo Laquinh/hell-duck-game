@@ -19,5 +19,6 @@ shape = SubResource("RectangleShape2D_sh265")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 visible = false
-enabled = false
-zoom = Vector2(5, 5)
+zoom = Vector2(3, 3)
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0
