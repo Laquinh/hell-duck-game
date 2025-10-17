@@ -7,13 +7,13 @@ extends CharacterBody2D
 func _physics_process(delta: float) -> void:
 	var input = Vector2.ZERO
 
-	if Input.is_action_pressed("ui_right"):
+	if Input.is_action_pressed("move_right"):
 		input.x += 1
-	if Input.is_action_pressed("ui_left"):
+	if Input.is_action_pressed("move_left"):
 		input.x += -1
-	if Input.is_action_pressed("ui_down"):
+	if Input.is_action_pressed("move_down"):
 		input.y += 1
-	if Input.is_action_pressed("ui_up"):
+	if Input.is_action_pressed("move_up"):
 		input.y += -1
 
 	input = input.normalized()
