@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8gmnal1kb536"
-path="res://.godot/imported/table_posh.png-93c0d51e5717aa5ab67f0f505e43a7f6.ctex"
+uid="uid://bo80c2dfs1jwo"
+path="res://.godot/imported/fridge-old.png-22508799bd37a4ecc93fbda9b41c30c8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://furniture/sprites/table_posh.png"
-dest_files=["res://.godot/imported/table_posh.png-93c0d51e5717aa5ab67f0f505e43a7f6.ctex"]
+source_file="res://furniture/sprites/fridge-old.png"
+dest_files=["res://.godot/imported/fridge-old.png-22508799bd37a4ecc93fbda9b41c30c8.ctex"]
 
 [params]
 

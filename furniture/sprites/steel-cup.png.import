@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cut4fsl6uxm6k"
-path="res://.godot/imported/dog_calendar.png-cd871ffb790e0b2071c6035e93abd527.ctex"
+uid="uid://kw7wltte3sb6"
+path="res://.godot/imported/steel-cup.png-e6d068fca486e83d25d6c1e7848c8386.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://furniture/sprites/dog_calendar.png"
-dest_files=["res://.godot/imported/dog_calendar.png-cd871ffb790e0b2071c6035e93abd527.ctex"]
+source_file="res://furniture/sprites/steel-cup.png"
+dest_files=["res://.godot/imported/steel-cup.png-e6d068fca486e83d25d6c1e7848c8386.ctex"]
 
 [params]
 

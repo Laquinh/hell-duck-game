@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5qalnwb8u6wt"
-path="res://.godot/imported/ghost_left.png-ec2db9ade4e2c25224317a1602196411.ctex"
+uid="uid://dl52ilr52x3v0"
+path="res://.godot/imported/cardboard-box.png-de37042e211471eb24bfaff41129a0ee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://player/sprites/ghost_left.png"
-dest_files=["res://.godot/imported/ghost_left.png-ec2db9ade4e2c25224317a1602196411.ctex"]
+source_file="res://furniture/sprites/cardboard-box.png"
+dest_files=["res://.godot/imported/cardboard-box.png-de37042e211471eb24bfaff41129a0ee.ctex"]
 
 [params]
 

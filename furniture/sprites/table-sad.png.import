@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dss4nl38plg4v"
-path="res://.godot/imported/crt tv.png-b2c09dbde33e4b55d62bd4b894da1d5e.ctex"
+uid="uid://dusw3hm57pj5e"
+path="res://.godot/imported/table-sad.png-bf18d9569b31400f39c2b5fc57d02170.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://furniture/sprites/crt tv.png"
-dest_files=["res://.godot/imported/crt tv.png-b2c09dbde33e4b55d62bd4b894da1d5e.ctex"]
+source_file="res://furniture/sprites/table-sad.png"
+dest_files=["res://.godot/imported/table-sad.png-bf18d9569b31400f39c2b5fc57d02170.ctex"]
 
 [params]
 
