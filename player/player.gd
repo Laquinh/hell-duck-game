@@ -48,8 +48,7 @@ func _input(event: InputEvent) -> void:
 						if new_distance < potential_distance:
 							potential_furniture = area
 							potential_distance = new_distance
-					possessed_furniture = area
-					visible = false
 			if potential_furniture:
 				possessed_furniture = potential_furniture
+				position = possessed_furniture.position
 				visible = false
