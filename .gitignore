@@ -16,3 +16,10 @@ mono_crash.*.json
 
 # Platform-specific ignores
 /build-web/
+
+# Working files from art creation
+*.pdn
+*.ase
+*.aseprite
+*.bak
+*.gif
