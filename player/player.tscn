@@ -25,6 +25,7 @@ right_texture = ExtResource("6_2ieo8")
 speed = 100.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.91764706)
 texture = ExtResource("2_onrkg")
 
 [node name="Camera2D" type="Camera2D" parent="."]
