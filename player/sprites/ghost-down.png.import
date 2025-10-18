@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dusw3hm57pj5e"
-path="res://.godot/imported/table_sad.png-c2c9770dc574a15782f071ba3fd8ef78.ctex"
+uid="uid://dl2d6u6bwdls5"
+path="res://.godot/imported/ghost-down.png-06c3bc8c7f2e9a2850cfe3e046fbc2b7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://furniture/sprites/table_sad.png"
-dest_files=["res://.godot/imported/table_sad.png-c2c9770dc574a15782f071ba3fd8ef78.ctex"]
+source_file="res://player/sprites/ghost-down.png"
+dest_files=["res://.godot/imported/ghost-down.png-06c3bc8c7f2e9a2850cfe3e046fbc2b7.ctex"]
 
 [params]
 

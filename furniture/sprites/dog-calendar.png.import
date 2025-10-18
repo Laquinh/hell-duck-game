@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cocvkfx2nmj5q"
-path="res://.godot/imported/ghost_idle.png-91deb471191212ab83afbca0dfae99c5.ctex"
+uid="uid://cut4fsl6uxm6k"
+path="res://.godot/imported/dog-calendar.png-33aa009fe3b8cef74680c9f0bf0b4748.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://player/sprites/ghost_idle.png"
-dest_files=["res://.godot/imported/ghost_idle.png-91deb471191212ab83afbca0dfae99c5.ctex"]
+source_file="res://furniture/sprites/dog-calendar.png"
+dest_files=["res://.godot/imported/dog-calendar.png-33aa009fe3b8cef74680c9f0bf0b4748.ctex"]
 
 [params]
 

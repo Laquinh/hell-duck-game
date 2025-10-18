@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dl52ilr52x3v0"
-path="res://.godot/imported/cardboard_box.png-5c20d7cfd8b8bbe7d2c8abb0bb6645b0.ctex"
+uid="uid://dss4nl38plg4v"
+path="res://.godot/imported/crt-tv.png-9e317787a2ed107568d8182e22bb991d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://furniture/sprites/cardboard_box.png"
-dest_files=["res://.godot/imported/cardboard_box.png-5c20d7cfd8b8bbe7d2c8abb0bb6645b0.ctex"]
+source_file="res://furniture/sprites/crt-tv.png"
+dest_files=["res://.godot/imported/crt-tv.png-9e317787a2ed107568d8182e22bb991d.ctex"]
 
 [params]
 

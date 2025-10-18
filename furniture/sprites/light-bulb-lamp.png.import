@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxictor76ffag"
-path="res://.godot/imported/ghost_up.png-4460a2da203ac60f044a8ce5e4bac899.ctex"
+uid="uid://caqd1b2m4gob"
+path="res://.godot/imported/light-bulb-lamp.png-c68fd58d61c93324c46a465873470747.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://player/sprites/ghost_up.png"
-dest_files=["res://.godot/imported/ghost_up.png-4460a2da203ac60f044a8ce5e4bac899.ctex"]
+source_file="res://furniture/sprites/light-bulb-lamp.png"
+dest_files=["res://.godot/imported/light-bulb-lamp.png-c68fd58d61c93324c46a465873470747.ctex"]
 
 [params]
 

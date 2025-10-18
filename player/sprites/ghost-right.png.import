@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2k7s54p1hfew"
-path="res://.godot/imported/tv_stand_table_old.png-651fd1e474f84a0baa73d6015072e4dd.ctex"
+uid="uid://bqyulk6em4wrt"
+path="res://.godot/imported/ghost-right.png-8ecb558d977451a85d21eabc888dcb3c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://furniture/sprites/tv_stand_table_old.png"
-dest_files=["res://.godot/imported/tv_stand_table_old.png-651fd1e474f84a0baa73d6015072e4dd.ctex"]
+source_file="res://player/sprites/ghost-right.png"
+dest_files=["res://.godot/imported/ghost-right.png-8ecb558d977451a85d21eabc888dcb3c.ctex"]
 
 [params]
 

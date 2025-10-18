@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kw7wltte3sb6"
-path="res://.godot/imported/steel_cup.png-1efd94c49d3e61f3022e5abe4e2a4a93.ctex"
+uid="uid://b8gmnal1kb536"
+path="res://.godot/imported/table-posh.png-853cc184914257de96bea18dffb76c39.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://furniture/sprites/steel_cup.png"
-dest_files=["res://.godot/imported/steel_cup.png-1efd94c49d3e61f3022e5abe4e2a4a93.ctex"]
+source_file="res://furniture/sprites/table-posh.png"
+dest_files=["res://.godot/imported/table-posh.png-853cc184914257de96bea18dffb76c39.ctex"]
 
 [params]
 
