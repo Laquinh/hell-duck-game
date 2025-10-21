@@ -17,6 +17,7 @@ zoom = Vector2(3, 3)
 [node name="House" parent="." instance=ExtResource("2_0xm2m")]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+process_mode = 3
 stream = ExtResource("3_h2yge")
 autoplay = true
 playback_type = 1
