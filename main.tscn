@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://brk25ygn7iwxb"]
+[gd_scene load_steps=5 format=3 uid="uid://brk25ygn7iwxb"]
 
 [ext_resource type="PackedScene" uid="uid://d1gpphkbcphic" path="res://player/player.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://darci4dxcv82f" path="res://house/house.tscn" id="2_0xm2m"]
 [ext_resource type="AudioStream" uid="uid://o3x5mqk7o3hu" path="res://background-music.mp3" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://di1o3b5isv8mo" path="res://pause-menu/pause_menu.tscn" id="4_1bvp3"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -19,3 +20,5 @@ zoom = Vector2(3, 3)
 stream = ExtResource("3_h2yge")
 autoplay = true
 playback_type = 1
+
+[node name="PauseMenu" parent="." instance=ExtResource("4_1bvp3")]
