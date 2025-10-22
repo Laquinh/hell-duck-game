@@ -1,5 +1,11 @@
 extends CharacterBody2D
 
+@export var idle_texture: Texture2D
+@export var up_texture: Texture2D
+@export var down_texture: Texture2D
+@export var left_texture: Texture2D
+@export var right_texture: Texture2D
+
 @export var speed: float = 200
 @export var acceleration: float = 1000
 @export var friction: float = 2200
@@ -25,8 +31,17 @@ func _physics_process(delta: float) -> void:
 	
 	if input == Vector2.ZERO:
 		velocity = velocity.move_toward(Vector2.ZERO, friction * delta)
+		$Sprite2D.texture = idle_texture
 	else:
 		velocity = velocity.move_toward(input * speed, acceleration * delta)
+		if input.x < 0:
+			$Sprite2D.texture = left_texture
+		elif input.x > 0:
+			$Sprite2D.texture = right_texture
+		elif input.y < 0:
+			$Sprite2D.texture = up_texture
+		else:
+			$Sprite2D.texture = down_texture
 	
 	move_and_slide()
 	
