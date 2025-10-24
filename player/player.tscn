@@ -14,7 +14,7 @@ size = Vector2(24, 24)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rkbax"]
 size = Vector2(61, 59)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
 z_index = 1
 script = ExtResource("1_4flbx")
 idle_texture = ExtResource("2_boad6")

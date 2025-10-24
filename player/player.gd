@@ -1,5 +1,4 @@
 extends CharacterBody2D
-
 @export var idle_texture: Texture2D
 @export var up_texture: Texture2D
 @export var down_texture: Texture2D
@@ -9,11 +8,8 @@ extends CharacterBody2D
 @export var speed: float = 200
 @export var acceleration: float = 1000
 @export var friction: float = 2200
-@export var dance_amplitude: float = 4
-@export var dance_speed: float = 5
 
-var possessed_furniture: Node2D = null
-var dance_time: float = 0
+var possessed_furniture: Furniture = null
 
 func _physics_process(delta: float) -> void:
 	var input = Vector2.ZERO
@@ -44,26 +40,19 @@ func _physics_process(delta: float) -> void:
 			$Sprite2D.texture = down_texture
 	
 	move_and_slide()
-	
-	if possessed_furniture:
-		possessed_furniture.position = position
-		dance_time += delta * dance_speed
-		possessed_furniture.rotation_degrees = dance_amplitude * sin(dance_time)
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("possess"):
 		if possessed_furniture:
-			dance_time = 0
-			possessed_furniture.rotation_degrees = 0
-			possessed_furniture = null
-			visible = true      
+			possessed_furniture.toggle_possessed()
+			visible = true
 		else:
 			var potential_furniture = null
 			var potential_distance = null
 			for area in $Area2D.get_overlapping_areas():
 				if area.is_in_group("Furniture"):
 					if !potential_furniture:
-						potential_furniture = area
+						potential_furniture = area as Furniture
 						potential_distance = global_position.distance_to(area.global_position)     
 					else:
 						var new_distance = global_position.distance_to(area.global_position)
@@ -72,5 +61,5 @@ func _input(event: InputEvent) -> void:
 							potential_distance = new_distance
 			if potential_furniture:
 				possessed_furniture = potential_furniture
-				position = possessed_furniture.position
+				possessed_furniture.toggle_possessed()
 				visible = false
