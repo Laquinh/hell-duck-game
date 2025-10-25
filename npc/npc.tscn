@@ -3,8 +3,9 @@
 [ext_resource type="Script" uid="uid://bt2c36bm38q8h" path="res://npc/npc-initialiser.gd" id="1_2xp5l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2xp5l"]
+size = Vector2(32, 90)
 
-[node name="Npc" type="Area2D"]
+[node name="Npc" type="Area2D" groups=["Npc"]]
 script = ExtResource("1_2xp5l")
 metadata/_custom_type_script = "uid://bt2c36bm38q8h"
 
