@@ -17,3 +17,7 @@ func _physics_process(delta: float) -> void:
 		get_parent().rotation_degrees = dance_amplitude * sin(dance_time)
 	else:
 		get_parent().rotation_degrees = 0
+
+func toggle_possessed() -> void:
+	super.toggle_possessed()
+	player.position = get_parent().position
