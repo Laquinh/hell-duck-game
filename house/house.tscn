@@ -15,6 +15,7 @@ texture = ExtResource("1_g0npy")
 position = Vector2(-173, -154)
 furniture = ExtResource("3_t6m4b")
 
-[node name="PoshLady" parent="." instance=ExtResource("4_q8k63")]
+[node name="PoshLady" parent="." node_paths=PackedStringArray("scary_furniture") instance=ExtResource("4_q8k63")]
 position = Vector2(128, -175)
 npc = ExtResource("5_mkffg")
+scary_furniture = [NodePath("../Armchair")]
