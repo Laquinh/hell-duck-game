@@ -9,7 +9,7 @@ extends CharacterBody2D
 @export var acceleration: float = 1000
 @export var friction: float = 2200
 
-var possessed_furniture: Furniture = null
+var possessed_furniture: FurnitureBehavior = null
 
 func _physics_process(delta: float) -> void:
 	var input = Vector2.ZERO
@@ -52,8 +52,8 @@ func _input(event: InputEvent) -> void:
 			for area in $Area2D.get_overlapping_areas():
 				if area.is_in_group("Furniture"):
 					if !potential_furniture:
-						potential_furniture = area as Furniture
-						potential_distance = global_position.distance_to(area.global_position)     
+						potential_furniture = area.behavior
+						potential_distance = global_position.distance_to(area.global_position)
 					else:
 						var new_distance = global_position.distance_to(area.global_position)
 						if new_distance < potential_distance:
