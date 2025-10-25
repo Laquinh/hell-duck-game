@@ -2,18 +2,12 @@
 
 [ext_resource type="Texture2D" uid="uid://2r6eq226gwit" path="res://house/sprites/house.png" id="1_g0npy"]
 [ext_resource type="PackedScene" uid="uid://qs60hkstdfot" path="res://furniture/furniture.tscn" id="2_t6m4b"]
-[ext_resource type="Texture2D" uid="uid://bo80c2dfs1jwo" path="res://furniture/sprites/fridge-old.png" id="3_nxes2"]
+[ext_resource type="Resource" uid="uid://dsbxweh8mtt82" path="res://furniture/resources/armchair.tres" id="3_t6m4b"]
 
 [node name="House" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_g0npy")
 
-[node name="Fridge" parent="." instance=ExtResource("2_t6m4b")]
-position = Vector2(-293, -183)
-texture = ExtResource("3_nxes2")
-
-[node name="Sprite2D" parent="Fridge" index="0"]
-texture = ExtResource("3_nxes2")
-
-[editable path="Fridge"]
+[node name="Armchair" parent="." instance=ExtResource("2_t6m4b")]
+furniture = ExtResource("3_t6m4b")

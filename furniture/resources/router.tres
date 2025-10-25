@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Furniture" load_steps=3 format=3 uid="uid://dqjmdt1lje36w"]
 
-[ext_resource type="Script" uid="uid://bc3hb7obss36a" path="res://furniture.gd" id="1_i4l48"]
+[ext_resource type="Script" uid="uid://bc3hb7obss36a" path="res://furniture/furniture.gd" id="1_i4l48"]
 [ext_resource type="Texture2D" uid="uid://cxdloyvrg7puv" path="res://furniture/sprites/router.png" id="2_mc4i0"]
 
 [resource]

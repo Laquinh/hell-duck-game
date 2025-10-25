@@ -1,4 +1,4 @@
-extends Furniture
+extends FurnitureBehavior
 
 var player: CharacterBody2D = null
 
@@ -12,8 +12,8 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	if is_possessed:
-		position = player.position
+		get_parent().position = player.position
 		dance_time += delta * dance_speed
-		rotation_degrees = dance_amplitude * sin(dance_time)
+		get_parent().rotation_degrees = dance_amplitude * sin(dance_time)
 	else:
-		rotation_degrees = 0
+		get_parent().rotation_degrees = 0

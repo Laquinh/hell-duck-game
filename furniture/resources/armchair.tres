@@ -1,10 +1,11 @@
-[gd_resource type="Resource" script_class="Furniture" load_steps=3 format=3 uid="uid://dsbxweh8mtt82"]
+[gd_resource type="Resource" script_class="Furniture" load_steps=4 format=3 uid="uid://dsbxweh8mtt82"]
 
-[ext_resource type="Script" uid="uid://bc3hb7obss36a" path="res://furniture.gd" id="1_o34gv"]
+[ext_resource type="Script" uid="uid://bkpcwp3jwvi2o" path="res://furniture/draggable-furniture.gd" id="1_uqwv7"]
+[ext_resource type="Script" uid="uid://bc3hb7obss36a" path="res://furniture/furniture.gd" id="2_5p5oc"]
 [ext_resource type="Texture2D" uid="uid://brh4wnjyy5g1y" path="res://furniture/sprites/armchair.png" id="2_d5lsq"]
 
 [resource]
-script = ExtResource("1_o34gv")
+script = ExtResource("2_5p5oc")
 texture = ExtResource("2_d5lsq")
-health = 10
-metadata/_custom_type_script = "uid://bc3hb7obss36a"
+interaction_box_padding = Vector2(0, 1)
+furniture_behavior = ExtResource("1_uqwv7")

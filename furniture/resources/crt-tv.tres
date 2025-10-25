@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Furniture" load_steps=3 format=3 uid="uid://dgn18iv3uthsb"]
 
-[ext_resource type="Script" uid="uid://bc3hb7obss36a" path="res://furniture.gd" id="1_ism5b"]
+[ext_resource type="Script" uid="uid://bc3hb7obss36a" path="res://furniture/furniture.gd" id="1_ism5b"]
 [ext_resource type="Texture2D" uid="uid://dss4nl38plg4v" path="res://furniture/sprites/crt-tv.png" id="2_uw4xp"]
 
 [resource]
