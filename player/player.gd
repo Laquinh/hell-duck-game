@@ -45,6 +45,7 @@ func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("possess"):
 		if possessed_furniture:
 			possessed_furniture.toggle_possessed()
+			possessed_furniture = null
 			visible = true
 		else:
 			var potential_furniture = null
