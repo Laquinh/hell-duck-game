@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Furniture" load_steps=4 format=3 uid="uid://d4nbnuipk0yfm"]
+
+[ext_resource type="Script" uid="uid://bkpcwp3jwvi2o" path="res://furniture/draggable-furniture.gd" id="1_pl23j"]
+[ext_resource type="Script" uid="uid://bc3hb7obss36a" path="res://furniture/furniture.gd" id="2_r7kev"]
+[ext_resource type="Texture2D" uid="uid://dl52ilr52x3v0" path="res://furniture/sprites/cardboard-box.png" id="3_pl23j"]
+
+[resource]
+script = ExtResource("2_r7kev")
+texture = ExtResource("3_pl23j")
+interaction_box_padding = Vector2(2, 2)
+furniture_behavior = ExtResource("1_pl23j")
+metadata/_custom_type_script = "uid://bc3hb7obss36a"

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Furniture" load_steps=4 format=3 uid="uid://272yy31gtqfq"]
+
+[ext_resource type="Script" uid="uid://bkpcwp3jwvi2o" path="res://furniture/draggable-furniture.gd" id="1_b63fj"]
+[ext_resource type="Script" uid="uid://bc3hb7obss36a" path="res://furniture/furniture.gd" id="2_5ut2s"]
+[ext_resource type="Texture2D" uid="uid://xjamnp8r70st" path="res://furniture/sprites/8-string-guitar.png" id="3_b63fj"]
+
+[resource]
+script = ExtResource("2_5ut2s")
+texture = ExtResource("3_b63fj")
+interaction_box_padding = Vector2(-3, -3)
+furniture_behavior = ExtResource("1_b63fj")
+metadata/_custom_type_script = "uid://bc3hb7obss36a"

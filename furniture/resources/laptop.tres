@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Furniture" load_steps=4 format=3 uid="uid://ia53fx174lp"]
+
+[ext_resource type="Script" uid="uid://bkpcwp3jwvi2o" path="res://furniture/draggable-furniture.gd" id="1_loqqk"]
+[ext_resource type="Script" uid="uid://bc3hb7obss36a" path="res://furniture/furniture.gd" id="2_c28xl"]
+[ext_resource type="Texture2D" uid="uid://yrwcg105hlsv" path="res://furniture/sprites/laptop.png" id="3_loqqk"]
+
+[resource]
+script = ExtResource("2_c28xl")
+texture = ExtResource("3_loqqk")
+furniture_behavior = ExtResource("1_loqqk")

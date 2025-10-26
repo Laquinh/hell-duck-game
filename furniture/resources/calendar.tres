@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Furniture" load_steps=4 format=3 uid="uid://d0wsn10pa3c03"]
+
+[ext_resource type="Script" uid="uid://bkpcwp3jwvi2o" path="res://furniture/draggable-furniture.gd" id="1_5wx7d"]
+[ext_resource type="Script" uid="uid://bc3hb7obss36a" path="res://furniture/furniture.gd" id="1_ox5cb"]
+[ext_resource type="Texture2D" uid="uid://cpwqmmt480rcq" path="res://furniture/sprites/calendar.png" id="3_5wx7d"]
+
+[resource]
+script = ExtResource("1_ox5cb")
+texture = ExtResource("3_5wx7d")
+interaction_box_padding = Vector2(4, 0)
+furniture_behavior = ExtResource("1_5wx7d")
+metadata/_custom_type_script = "uid://bc3hb7obss36a"

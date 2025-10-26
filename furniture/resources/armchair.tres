@@ -7,5 +7,4 @@
 [resource]
 script = ExtResource("2_5p5oc")
 texture = ExtResource("2_d5lsq")
-interaction_box_padding = Vector2(0, 1)
 furniture_behavior = ExtResource("1_uqwv7")

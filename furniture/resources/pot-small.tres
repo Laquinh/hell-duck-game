@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Furniture" load_steps=4 format=3 uid="uid://csceww06faig4"]
+
+[ext_resource type="Script" uid="uid://bkpcwp3jwvi2o" path="res://furniture/draggable-furniture.gd" id="1_8c7jm"]
+[ext_resource type="Script" uid="uid://bc3hb7obss36a" path="res://furniture/furniture.gd" id="2_23lcm"]
+[ext_resource type="Texture2D" uid="uid://d0ki8gavxw18k" path="res://furniture/sprites/pot-small.png" id="3_8c7jm"]
+
+[resource]
+script = ExtResource("2_23lcm")
+texture = ExtResource("3_8c7jm")
+furniture_behavior = ExtResource("1_8c7jm")

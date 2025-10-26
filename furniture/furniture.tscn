@@ -4,7 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://caopn1qhf0t3k" path="res://furniture/furniture.png" id="1_fugw3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7ohkw"]
-size = Vector2(35, 46)
+resource_local_to_scene = true
+size = Vector2(35, 45)
 
 [node name="Furniture" type="Area2D" groups=["Furniture"]]
 script = ExtResource("1_8h4ty")

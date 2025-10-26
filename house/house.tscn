@@ -1,21 +1,413 @@
-[gd_scene load_steps=6 format=3 uid="uid://darci4dxcv82f"]
+[gd_scene load_steps=64 format=3 uid="uid://darci4dxcv82f"]
 
 [ext_resource type="Texture2D" uid="uid://2r6eq226gwit" path="res://house/sprites/house.png" id="1_g0npy"]
 [ext_resource type="PackedScene" uid="uid://qs60hkstdfot" path="res://furniture/furniture.tscn" id="2_t6m4b"]
 [ext_resource type="Resource" uid="uid://dsbxweh8mtt82" path="res://furniture/resources/armchair.tres" id="3_t6m4b"]
+[ext_resource type="Resource" uid="uid://d2why5gntyeu5" path="res://furniture/resources/table-posh.tres" id="4_c6gah"]
+[ext_resource type="Resource" uid="uid://b2ysh3sdx0e2t" path="res://furniture/resources/fridge.tres" id="4_jp2re"]
 [ext_resource type="PackedScene" uid="uid://bdiuec43f6jp8" path="res://npc/npc.tscn" id="4_q8k63"]
+[ext_resource type="Resource" uid="uid://driewpjywkahj" path="res://furniture/resources/cabinet.tres" id="5_0sddx"]
+[ext_resource type="Resource" uid="uid://wf4pabwb8qrw" path="res://furniture/resources/cup-posh.tres" id="5_43e1r"]
+[ext_resource type="Resource" uid="uid://bl5xgbqqyq6uv" path="res://furniture/resources/table-old.tres" id="5_65n3d"]
+[ext_resource type="Resource" uid="uid://ddtxkjk6infw2" path="res://furniture/resources/bed-big.tres" id="5_74nv0"]
+[ext_resource type="Resource" uid="uid://dqjmdt1lje36w" path="res://furniture/resources/router.tres" id="5_ahhpa"]
 [ext_resource type="Resource" uid="uid://2wgts5yeodl7" path="res://npc/resources/posh-lady.tres" id="5_mkffg"]
+[ext_resource type="Resource" uid="uid://b1rk88xuurhkg" path="res://furniture/resources/shelve-big.tres" id="5_twhqx"]
+[ext_resource type="Resource" uid="uid://bfcitw1k05r50" path="res://furniture/resources/oven.tres" id="6_2oa6t"]
+[ext_resource type="Resource" uid="uid://cdqn86etxlmf6" path="res://furniture/resources/cabinet-wall.tres" id="6_7x6g6"]
+[ext_resource type="Resource" uid="uid://crfp7huuo5yo7" path="res://furniture/resources/mirror.tres" id="6_h88wi"]
+[ext_resource type="Resource" uid="uid://cdmfpog72t51s" path="res://furniture/resources/cookies.tres" id="6_mpj70"]
+[ext_resource type="Resource" uid="uid://y6rndibt41ox" path="res://furniture/resources/plant-herb.tres" id="6_uxrrs"]
+[ext_resource type="Resource" uid="uid://c6v3wc7wwl0no" path="res://furniture/resources/cabinet-over-oven.tres" id="7_7t6lh"]
+[ext_resource type="Resource" uid="uid://b1wgy8eafr0ui" path="res://furniture/resources/vase.tres" id="7_cu6ax"]
+[ext_resource type="Resource" uid="uid://c8viovgkk6ivl" path="res://furniture/resources/cup-steel.tres" id="7_gkkdt"]
+[ext_resource type="Resource" uid="uid://cp7fwi32nlc7y" path="res://furniture/resources/lamp-ground.tres" id="7_k2747"]
+[ext_resource type="Resource" uid="uid://d4nbnuipk0yfm" path="res://furniture/resources/cardboard-box.tres" id="8_7f618"]
+[ext_resource type="Resource" uid="uid://b11a3eaduhwp1" path="res://furniture/resources/toy-box.tres" id="8_algho"]
+[ext_resource type="Resource" uid="uid://dg1exnx48fe7m" path="res://furniture/resources/plant-flower.tres" id="8_ll3f3"]
+[ext_resource type="Resource" uid="uid://d0wsn10pa3c03" path="res://furniture/resources/calendar.tres" id="9_0ndow"]
+[ext_resource type="Resource" uid="uid://bdylymaio15e7" path="res://furniture/resources/pot.tres" id="9_fw4yn"]
+[ext_resource type="Resource" uid="uid://c07363fnia7aa" path="res://furniture/resources/doll-house.tres" id="9_xyhon"]
+[ext_resource type="Resource" uid="uid://1cota4sy458" path="res://furniture/resources/teddy-bear-big.tres" id="10_0kr46"]
+[ext_resource type="Resource" uid="uid://csceww06faig4" path="res://furniture/resources/pot-small.tres" id="10_mlmoe"]
+[ext_resource type="Resource" uid="uid://dd3a1bt1nn7o5" path="res://furniture/resources/plush-cat.tres" id="11_7k1m4"]
+[ext_resource type="Resource" uid="uid://cd4mcf3h5g7ob" path="res://furniture/resources/lightbulb-lit.tres" id="11_c6gah"]
+[ext_resource type="Resource" uid="uid://c7mmqrx5ec5xn" path="res://furniture/resources/foot-rest.tres" id="11_hahy1"]
+[ext_resource type="Resource" uid="uid://cmgfcgicrnlff" path="res://furniture/resources/tv-stand.tres" id="12_c6gah"]
+[ext_resource type="Resource" uid="uid://cbucp1ki4me5x" path="res://furniture/resources/teddy-bear.tres" id="12_m5u2c"]
+[ext_resource type="Resource" uid="uid://dgn18iv3uthsb" path="res://furniture/resources/crt-tv.tres" id="13_43e1r"]
+[ext_resource type="Resource" uid="uid://dpssvn6mqft5o" path="res://furniture/resources/lamp-red.tres" id="13_xyhon"]
+[ext_resource type="Resource" uid="uid://dx5a3qefhyt2i" path="res://furniture/resources/plate-posh.tres" id="15_aofqu"]
+[ext_resource type="Resource" uid="uid://3dbkugk6o6xv" path="res://furniture/resources/bowl-posh.tres" id="16_aofqu"]
+[ext_resource type="Resource" uid="uid://dyp3ebbksmp2j" path="res://furniture/resources/lamp-wall.tres" id="16_ct270"]
+[ext_resource type="Resource" uid="uid://dqiav23imde3q" path="res://furniture/resources/bed-punk.tres" id="24_xe14b"]
+[ext_resource type="Resource" uid="uid://fx7kkh3xjkot" path="res://furniture/resources/shelve-small.tres" id="25_xxn46"]
+[ext_resource type="Resource" uid="uid://cq3ihhbbl0sju" path="res://furniture/resources/boombox.tres" id="26_1u7xo"]
+[ext_resource type="Resource" uid="uid://df1rcw0nnip6o" path="res://furniture/resources/books.tres" id="26_i7ajr"]
+[ext_resource type="Resource" uid="uid://cxbi4xfxpnpd5" path="res://furniture/resources/candle.tres" id="27_1u7xo"]
+[ext_resource type="Resource" uid="uid://bsgfmex87jd51" path="res://furniture/resources/diary.tres" id="29_7k1m4"]
+[ext_resource type="Resource" uid="uid://5hqmw0u3nl5w" path="res://furniture/resources/table-and-seat.tres" id="29_esxab"]
+[ext_resource type="Resource" uid="uid://diej2dx708n1l" path="res://furniture/resources/cd-stand.tres" id="29_wr8le"]
+[ext_resource type="Resource" uid="uid://ia53fx174lp" path="res://furniture/resources/laptop.tres" id="30_1u7xo"]
+[ext_resource type="Resource" uid="uid://pdk56amftpv1" path="res://furniture/resources/lightbulb.tres" id="30_74nv0"]
+[ext_resource type="Resource" uid="uid://djdr0tgycrvnd" path="res://furniture/resources/shelf-girl.tres" id="30_m5u2c"]
+[ext_resource type="Resource" uid="uid://dlnw7e5s8bf8k" path="res://furniture/resources/piano.tres" id="36_clihy"]
+[ext_resource type="Resource" uid="uid://850ppipb5ev4" path="res://furniture/resources/piano-seat.tres" id="37_oo7en"]
+[ext_resource type="Resource" uid="uid://b8l25ledvpmub" path="res://furniture/resources/record-blue.tres" id="38_vvcth"]
+[ext_resource type="Resource" uid="uid://c10cnom8ukrfr" path="res://furniture/resources/record-green.tres" id="39_aueej"]
+[ext_resource type="Resource" uid="uid://hbxseo1yu4n2" path="res://furniture/resources/record-orange.tres" id="40_u7nrj"]
+[ext_resource type="Resource" uid="uid://dtcppwveqvehb" path="res://furniture/resources/lamp-black.tres" id="41_oo7en"]
+[ext_resource type="Resource" uid="uid://cv6ljj7llglfb" path="res://furniture/resources/stand-notes.tres" id="42_aueej"]
+[ext_resource type="Resource" uid="uid://d32gtxyschiaf" path="res://furniture/resources/stand-mic.tres" id="43_u7nrj"]
+[ext_resource type="Resource" uid="uid://4i78q058org3" path="res://furniture/resources/guitar-6-string.tres" id="44_sj5t4"]
+[ext_resource type="Resource" uid="uid://272yy31gtqfq" path="res://furniture/resources/guitar-8-string.tres" id="45_0j7rm"]
+[ext_resource type="Resource" uid="uid://dwyqdin7gj86c" path="res://furniture/resources/trash-can.tres" id="46_0j7rm"]
+[ext_resource type="Resource" uid="uid://ewy11hqadxjt" path="res://furniture/resources/metal-seat.tres" id="47_6bigr"]
 
 [node name="House" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(107.98338, -126.14622)
 texture = ExtResource("1_g0npy")
+offset = Vector2(-107.98338, 126.14622)
 
 [node name="Armchair" parent="." instance=ExtResource("2_t6m4b")]
-position = Vector2(-173, -154)
+position = Vector2(-179, -89.5)
 furniture = ExtResource("3_t6m4b")
 
+[node name="Armchair2" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(120, -82.5)
+furniture = ExtResource("4_c6gah")
+
+[node name="Armchair57" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(271, 29.5)
+furniture = ExtResource("5_74nv0")
+
+[node name="Armchair58" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(91, 22.5)
+furniture = ExtResource("6_h88wi")
+
+[node name="Armchair59" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(127, 35.5)
+furniture = ExtResource("7_k2747")
+
+[node name="Armchair60" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(176, 50)
+furniture = ExtResource("8_algho")
+
+[node name="Armchair61" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(165, 20.5)
+furniture = ExtResource("9_xyhon")
+
+[node name="Armchair63" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(190, 26.5)
+furniture = ExtResource("10_0kr46")
+
+[node name="Armchair64" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(211, 40.5)
+furniture = ExtResource("11_7k1m4")
+
+[node name="Armchair62" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(130, -13)
+furniture = ExtResource("12_m5u2c")
+
+[node name="Armchair65" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(197.5, -46.5)
+furniture = ExtResource("13_xyhon")
+
+[node name="Armchair24" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(102.5, -126)
+furniture = ExtResource("5_twhqx")
+
+[node name="Armchair29" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(102.5, -149)
+furniture = ExtResource("5_twhqx")
+
+[node name="Armchair18" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(302, -88.5)
+furniture = ExtResource("5_0sddx")
+
+[node name="Armchair19" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(215, -88.5)
+furniture = ExtResource("5_0sddx")
+
+[node name="Armchair21" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(215, -173)
+furniture = ExtResource("6_7x6g6")
+
+[node name="Armchair22" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(302, -173)
+furniture = ExtResource("6_7x6g6")
+
+[node name="Armchair23" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(258.5, -173)
+furniture = ExtResource("7_7t6lh")
+
+[node name="Armchair20" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(258.5, -89)
+furniture = ExtResource("6_2oa6t")
+
+[node name="Armchair25" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(270, -118)
+furniture = ExtResource("9_fw4yn")
+
+[node name="Armchair26" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(223, -114)
+furniture = ExtResource("10_mlmoe")
+
+[node name="Armchair27" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(295, -114)
+furniture = ExtResource("6_mpj70")
+
+[node name="Armchair28" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(312, -114)
+furniture = ExtResource("7_gkkdt")
+
+[node name="Armchair3" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(82, -101)
+furniture = ExtResource("5_43e1r")
+
+[node name="Armchair30" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(80, -151)
+furniture = ExtResource("5_43e1r")
+
+[node name="Armchair31" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(88, -151)
+furniture = ExtResource("5_43e1r")
+
+[node name="Armchair32" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(96, -151)
+furniture = ExtResource("5_43e1r")
+
+[node name="Armchair36" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(122, -155)
+furniture = ExtResource("15_aofqu")
+
+[node name="Armchair42" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(161.5, -177)
+furniture = ExtResource("16_ct270")
+
+[node name="Armchair43" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(96.5, -177)
+furniture = ExtResource("16_ct270")
+
+[node name="Armchair37" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(107, -155)
+furniture = ExtResource("15_aofqu")
+
+[node name="Armchair33" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(125, -128)
+furniture = ExtResource("5_43e1r")
+
+[node name="Armchair34" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(117, -128)
+furniture = ExtResource("5_43e1r")
+
+[node name="Armchair35" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(109, -128)
+furniture = ExtResource("5_43e1r")
+
+[node name="Armchair39" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(80.5, -129.5)
+furniture = ExtResource("16_aofqu")
+
+[node name="Armchair40" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(90.5, -129.5)
+furniture = ExtResource("16_aofqu")
+
+[node name="Armchair7" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(92, -101)
+furniture = ExtResource("5_43e1r")
+
+[node name="Armchair15" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(122, -101)
+furniture = ExtResource("5_43e1r")
+
+[node name="Armchair16" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(108, -102)
+furniture = ExtResource("6_mpj70")
+
+[node name="Armchair13" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(156, -101)
+furniture = ExtResource("5_43e1r")
+
+[node name="Armchair14" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(146, -104.5)
+furniture = ExtResource("7_cu6ax")
+
+[node name="Armchair38" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(100.5, -131.5)
+furniture = ExtResource("7_cu6ax")
+
+[node name="Armchair17" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(134.24638, -104.5)
+furniture = ExtResource("8_ll3f3")
+
+[node name="Armchair66" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(146, -14)
+furniture = ExtResource("8_ll3f3")
+
+[node name="Armchair67" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(158, -10)
+furniture = ExtResource("29_7k1m4")
+
+[node name="Armchair68" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(145, -4)
+furniture = ExtResource("30_m5u2c")
+
+[node name="Fridge" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-300.5, -117.5)
+furniture = ExtResource("4_jp2re")
+
+[node name="Table" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-251, -85)
+furniture = ExtResource("5_65n3d")
+
+[node name="Armchair4" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-265, -109.5)
+furniture = ExtResource("6_uxrrs")
+
+[node name="Armchair5" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-239, -106.5)
+furniture = ExtResource("7_gkkdt")
+
+[node name="Armchair6" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-257, -75)
+furniture = ExtResource("8_7f618")
+
+[node name="Armchair41" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-271, 38)
+furniture = ExtResource("24_xe14b")
+
+[node name="Armchair69" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-268.5, 165)
+furniture = ExtResource("36_clihy")
+
+[node name="Armchair70" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-217, 188)
+furniture = ExtResource("37_oo7en")
+
+[node name="Armchair71" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-291.5, 113.5)
+furniture = ExtResource("38_vvcth")
+
+[node name="Armchair72" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-266.5, 113.5)
+furniture = ExtResource("39_aueej")
+
+[node name="Armchair73" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-241.5, 113.5)
+furniture = ExtResource("40_u7nrj")
+
+[node name="Armchair74" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-192.5, 85)
+furniture = ExtResource("41_oo7en")
+
+[node name="Armchair75" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-181, 170.5)
+furniture = ExtResource("42_aueej")
+
+[node name="Armchair76" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-165, 165.5)
+furniture = ExtResource("43_u7nrj")
+
+[node name="Armchair77" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-127, 120)
+furniture = ExtResource("44_sj5t4")
+
+[node name="Armchair78" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-104, 120)
+furniture = ExtResource("45_0j7rm")
+
+[node name="Armchair79" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(81, 178.5)
+furniture = ExtResource("46_0j7rm")
+
+[node name="Armchair80" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(275, 180)
+furniture = ExtResource("47_6bigr")
+
+[node name="Armchair81" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(192, 180)
+furniture = ExtResource("47_6bigr")
+
+[node name="Armchair44" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-288, -24.5)
+furniture = ExtResource("25_xxn46")
+
+[node name="Armchair50" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-96, 8.5)
+furniture = ExtResource("25_xxn46")
+
+[node name="Armchair51" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-92, -11)
+furniture = ExtResource("26_1u7xo")
+
+[node name="Armchair45" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-295, -37)
+furniture = ExtResource("26_i7ajr")
+
+[node name="Armchair46" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-273, -37.5)
+furniture = ExtResource("27_1u7xo")
+
+[node name="Armchair47" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-203, 54.5)
+furniture = ExtResource("27_1u7xo")
+
+[node name="Armchair48" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-146, 54.5)
+furniture = ExtResource("27_1u7xo")
+
+[node name="Armchair55" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-129, 38)
+furniture = ExtResource("29_wr8le")
+
+[node name="Armchair56" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-169, -50)
+furniture = ExtResource("30_74nv0")
+
+[node name="Armchair54" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-114, 34.5)
+furniture = ExtResource("27_1u7xo")
+
+[node name="Armchair49" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-96, 54)
+furniture = ExtResource("29_esxab")
+
+[node name="Armchair52" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-96, 35.5)
+furniture = ExtResource("30_1u7xo")
+
+[node name="Armchair53" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-78, 40.5)
+furniture = ExtResource("7_gkkdt")
+
+[node name="Calendar" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-264, -138)
+furniture = ExtResource("9_0ndow")
+
+[node name="Armchair8" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-291, -172.5)
+furniture = ExtResource("5_ahhpa")
+
+[node name="Armchair9" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-193, -176)
+furniture = ExtResource("11_c6gah")
+
+[node name="Armchair10" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-144, -73)
+furniture = ExtResource("11_hahy1")
+
+[node name="Armchair11" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-103, -77)
+furniture = ExtResource("12_c6gah")
+
+[node name="Armchair12" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-103, -102.5)
+furniture = ExtResource("13_43e1r")
+
 [node name="PoshLady" parent="." node_paths=PackedStringArray("scary_furniture") instance=ExtResource("4_q8k63")]
-position = Vector2(128, -175)
+position = Vector2(38, -110)
 npc = ExtResource("5_mkffg")
 scary_furniture = [NodePath("../Armchair")]

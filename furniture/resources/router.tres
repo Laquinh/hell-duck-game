@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="Furniture" load_steps=3 format=3 uid="uid://dqjmdt1lje36w"]
+[gd_resource type="Resource" script_class="Furniture" load_steps=4 format=3 uid="uid://dqjmdt1lje36w"]
 
+[ext_resource type="Script" uid="uid://bkpcwp3jwvi2o" path="res://furniture/draggable-furniture.gd" id="1_5le5p"]
 [ext_resource type="Script" uid="uid://bc3hb7obss36a" path="res://furniture/furniture.gd" id="1_i4l48"]
 [ext_resource type="Texture2D" uid="uid://cxdloyvrg7puv" path="res://furniture/sprites/router.png" id="2_mc4i0"]
 
@@ -7,4 +8,5 @@
 script = ExtResource("1_i4l48")
 texture = ExtResource("2_mc4i0")
 interaction_box_padding = Vector2(4, 4)
+furniture_behavior = ExtResource("1_5le5p")
 metadata/_custom_type_script = "uid://bc3hb7obss36a"

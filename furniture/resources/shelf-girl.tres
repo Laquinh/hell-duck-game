@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Furniture" load_steps=4 format=3 uid="uid://djdr0tgycrvnd"]
+
+[ext_resource type="Script" uid="uid://bkpcwp3jwvi2o" path="res://furniture/draggable-furniture.gd" id="1_d2te5"]
+[ext_resource type="Script" uid="uid://bc3hb7obss36a" path="res://furniture/furniture.gd" id="2_sgjh4"]
+[ext_resource type="Texture2D" uid="uid://df0te4dhvxvoh" path="res://furniture/sprites/shelf-small-girl.png" id="3_d2te5"]
+
+[resource]
+script = ExtResource("2_sgjh4")
+texture = ExtResource("3_d2te5")
+furniture_behavior = ExtResource("1_d2te5")
