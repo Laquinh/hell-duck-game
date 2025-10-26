@@ -13,11 +13,13 @@ var behavior: FurnitureBehavior = null
 
 func _ready():
 	if furniture:
-		interaction_box.shape.size = furniture.texture.get_size() + furniture.interaction_box_padding
+		if furniture.texture:
+			interaction_box.shape.size = furniture.texture.get_size() + furniture.interaction_box_padding
 		sprite.texture = furniture.texture
-		behavior = furniture.furniture_behavior.new()
-		add_child(behavior)
+		if furniture.furniture_behavior:
+			behavior = furniture.furniture_behavior.new()
+			add_child(behavior)
 		
-		var is_editor = Engine.is_editor_hint()
-		behavior.set_process(!is_editor)
-		behavior.set_physics_process(!is_editor)
+			var is_editor = Engine.is_editor_hint()
+			behavior.set_process(!is_editor)
+			behavior.set_physics_process(!is_editor)
