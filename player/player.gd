@@ -50,15 +50,21 @@ func _input(event: InputEvent) -> void:
 		else:
 			var potential_furniture = null
 			var potential_distance = null
+			print(1)
 			for area in $Area2D.get_overlapping_areas():
+				print(2)
 				if area.is_in_group("Furniture"):
+					print(3)
 					if !potential_furniture:
+						print(4)
 						potential_furniture = area.behavior
 						potential_distance = global_position.distance_to(area.global_position)
 					else:
+						print(5)
 						var new_distance = global_position.distance_to(area.global_position)
 						if new_distance < potential_distance:
-							potential_furniture = area
+							print(6)
+							potential_furniture = area.behavior
 							potential_distance = new_distance
 			if potential_furniture:
 				possessed_furniture = potential_furniture

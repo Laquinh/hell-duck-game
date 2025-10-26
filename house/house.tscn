@@ -408,6 +408,6 @@ position = Vector2(-103, -102.5)
 furniture = ExtResource("13_43e1r")
 
 [node name="PoshLady" parent="." node_paths=PackedStringArray("scary_furniture") instance=ExtResource("4_q8k63")]
-position = Vector2(38, -110)
+position = Vector2(190, -110)
 npc = ExtResource("5_mkffg")
 scary_furniture = [NodePath("../Armchair")]

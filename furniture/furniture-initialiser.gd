@@ -5,7 +5,8 @@ extends Area2D
 @export var furniture: Furniture:
 	set(value): # by definig a setter we can run the _ready() when it's changed in the editor
 		furniture = value
-		_ready()
+		if Engine.is_editor_hint():
+			_ready()
 
 @onready var sprite: Sprite2D = $Sprite2D
 @onready var interaction_box: CollisionShape2D = $CollisionShape2D

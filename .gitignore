@@ -23,3 +23,7 @@ mono_crash.*.json
 *.aseprite
 *.bak
 *.gif
+
+# Built projects
+*.exe
+*.pck
