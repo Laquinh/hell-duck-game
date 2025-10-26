@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://darci4dxcv82f"]
+[gd_scene load_steps=6 format=3 uid="uid://darci4dxcv82f"]
 
 [ext_resource type="Texture2D" uid="uid://2r6eq226gwit" path="res://house/sprites/house.png" id="1_g0npy"]
 [ext_resource type="PackedScene" uid="uid://qs60hkstdfot" path="res://furniture/furniture.tscn" id="2_t6m4b"]
 [ext_resource type="Resource" uid="uid://dsbxweh8mtt82" path="res://furniture/resources/armchair.tres" id="3_t6m4b"]
+[ext_resource type="PackedScene" uid="uid://bdiuec43f6jp8" path="res://npc/npc.tscn" id="4_q8k63"]
+[ext_resource type="Resource" uid="uid://2wgts5yeodl7" path="res://npc/resources/posh-lady.tres" id="5_mkffg"]
 
 [node name="House" type="Node2D"]
 
@@ -10,4 +12,10 @@
 texture = ExtResource("1_g0npy")
 
 [node name="Armchair" parent="." instance=ExtResource("2_t6m4b")]
+position = Vector2(-173, -154)
 furniture = ExtResource("3_t6m4b")
+
+[node name="PoshLady" parent="." node_paths=PackedStringArray("scary_furniture") instance=ExtResource("4_q8k63")]
+position = Vector2(128, -175)
+npc = ExtResource("5_mkffg")
+scary_furniture = [NodePath("../Armchair")]
