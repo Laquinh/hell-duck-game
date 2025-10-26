@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Npc" load_steps=4 format=3 uid="uid://dic2pc37fsujy"]
+
+[ext_resource type="Script" uid="uid://dtieiibi2xdpf" path="res://npc/npc-behavior.gd" id="1_kdsrc"]
+[ext_resource type="Script" uid="uid://d2naopc32mat6" path="res://npc/npc.gd" id="2_t3gx7"]
+[ext_resource type="Texture2D" uid="uid://c5ltayixmeb84" path="res://npc/sprites/average-guy.png" id="3_kdsrc"]
+
+[resource]
+script = ExtResource("2_t3gx7")
+texture = ExtResource("3_kdsrc")
+npc_behavior = ExtResource("1_kdsrc")
+metadata/_custom_type_script = "uid://d2naopc32mat6"
