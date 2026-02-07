@@ -68,13 +68,19 @@
 [ext_resource type="Texture2D" uid="uid://vqwafslt118n" path="res://house/sprites/house-collisions-ghost.png" id="66_1vfu0"]
 [ext_resource type="Texture2D" uid="uid://bmdj67bwte6lv" path="res://house/sprites/house-collisions-furniture.png" id="66_jjuaq"]
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_1vfu0"]
+friction = 0.2
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_f2gol"]
+friction = 0.2
+
 [node name="House" type="Node2D" unique_id=1690959270]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1971291613]
 texture = ExtResource("1_g0npy")
 
 [node name="Armchair" parent="." unique_id=1647839962 instance=ExtResource("2_t6m4b")]
-position = Vector2(-179, -89.5)
+position = Vector2(-177, -90)
 furniture = ExtResource("3_t6m4b")
 
 [node name="Armchair2" parent="." unique_id=110963923 instance=ExtResource("2_t6m4b")]
@@ -394,11 +400,11 @@ position = Vector2(-291, -172.5)
 furniture = ExtResource("5_ahhpa")
 
 [node name="Armchair9" parent="." unique_id=834638443 instance=ExtResource("2_t6m4b")]
-position = Vector2(-193, -176)
+position = Vector2(-165, -176)
 furniture = ExtResource("11_c6gah")
 
 [node name="Armchair10" parent="." unique_id=1716598038 instance=ExtResource("2_t6m4b")]
-position = Vector2(-144, -73)
+position = Vector2(-143, -74)
 furniture = ExtResource("11_hahy1")
 
 [node name="Armchair11" parent="." unique_id=234115922 instance=ExtResource("2_t6m4b")]
@@ -412,26 +418,29 @@ furniture = ExtResource("13_43e1r")
 [node name="PoshLady" parent="." unique_id=529674023 node_paths=PackedStringArray("scary_furniture") instance=ExtResource("4_q8k63")]
 position = Vector2(190, -110)
 npc = ExtResource("5_mkffg")
-scary_furniture = [NodePath("../Armchair")]
+scary_furniture = [null]
 
 [node name="AverageGuy" parent="." unique_id=1450201444 node_paths=PackedStringArray("scary_furniture") instance=ExtResource("4_q8k63")]
 position = Vector2(-213, -112)
 npc = ExtResource("64_sfqip")
-scary_furniture = [NodePath("../Armchair")]
+scary_furniture = [null]
 
 [node name="Ghost collision" type="StaticBody2D" parent="." unique_id=729969179]
 collision_layer = 2
 collision_mask = 0
+physics_material_override = SubResource("PhysicsMaterial_1vfu0")
 script = ExtResource("65_3r6ed")
 texture = ExtResource("66_1vfu0")
 
-[node name="@CollisionPolygon2D@72931" type="CollisionPolygon2D" parent="Ghost collision" unique_id=1744655805]
+[node name="@CollisionPolygon2D@94975" type="CollisionPolygon2D" parent="Ghost collision" unique_id=1509958655]
 polygon = PackedVector2Array(-326, 198, 326, 198, 326, 195, -323, 195, -323, -195, 323, -195, 323, 194, 326, 194, 326, -198, -326, -198)
 
 [node name="Furniture collision" type="StaticBody2D" parent="." unique_id=2071910858]
-collision_mask = 0
+collision_layer = 5
+collision_mask = 5
+physics_material_override = SubResource("PhysicsMaterial_f2gol")
 script = ExtResource("65_3r6ed")
 texture = ExtResource("66_jjuaq")
 
-[node name="@CollisionPolygon2D@71606" type="CollisionPolygon2D" parent="Furniture collision" unique_id=206881434]
-polygon = PackedVector2Array(-326, 198, 326, 198, 326, 195, -323, 195, -323, 67, -67, 67, -67, 112, -64, 112, -64, 64, -323, 64, -323, -64, -67, -64, -67, -19, -64, -19, -64, -67, -323, -67, -323, -195, -67, -195, -67, -150, -64, -150, -64, -195, 64, -195, 64, -150, 67, -150, 67, -195, 323, -195, 323, -67, 64, -67, 64, -19, 67, -19, 67, -64, 323, -64, 323, 64, 64, 64, 64, 112, 67, 112, 67, 67, 323, 67, 323, 194, 326, 194, 326, -198, -326, -198)
+[node name="@CollisionPolygon2D@94549" type="CollisionPolygon2D" parent="Furniture collision" unique_id=1307793029]
+polygon = PackedVector2Array(-326, 198, 326, 198, 326, 195, -323, 195, -323, 67, -67, 67, -67, 112, -64, 112, -64, 67, 8, 67, 8, 64, -323, 64, -323, -64, -67, -64, -67, -19, -64, -19, -64, -64, 8, -64, 8, -67, -323, -67, -323, -195, -67, -195, -67, -150, -64, -150, -64, -195, 64, -195, 64, -150, 67, -150, 67, -195, 323, -195, 323, -67, 64, -67, 64, -19, 67, -19, 67, -64, 323, -64, 323, 64, 64, 64, 64, 112, 67, 112, 67, 67, 323, 67, 323, 194, 326, 194, 326, -198, -326, -198)

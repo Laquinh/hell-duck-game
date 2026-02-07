@@ -18,6 +18,13 @@ func _ready():
 	original_collider_size = current_collider.shape.size
 
 func _physics_process(delta: float) -> void:
+	if possessed_furniture:
+		position = possessed_furniture.get_parent().position
+		possessed_furniture.possesed_movement(speed, acceleration, delta)
+	else:
+		unpossesed_movement(delta)
+	
+func unpossesed_movement(delta: float) -> void:
 	var input = Vector2.ZERO
 	
 	if Input.is_action_pressed("move_right"):
@@ -53,7 +60,6 @@ func _input(event: InputEvent) -> void:
 			possessed_furniture.toggle_possessed()
 			possessed_furniture = null
 			visible = true
-			collision_mask &= ~(1 << 0)
 			current_collider.shape.size = original_collider_size
 		else:
 			var potential_furniture = null
@@ -65,21 +71,18 @@ func _input(event: InputEvent) -> void:
 					print(3)
 					if !potential_furniture:
 						print(4)
-						potential_furniture = area
+						potential_furniture = area.get_parent()
+						print(area.get_path(), area)
 						potential_distance = global_position.distance_to(area.global_position)
 					else:
 						print(5)
 						var new_distance = global_position.distance_to(area.global_position)
 						if new_distance < potential_distance:
 							print(6)
-							potential_furniture = area
+							potential_furniture = area.get_parent()
 							potential_distance = new_distance
 			if potential_furniture:
 				possessed_furniture = potential_furniture.behavior
 				possessed_furniture.toggle_possessed()
 				visible = false
-				collision_mask |= 1 << 0
 				var furniture: Furniture = potential_furniture.get("furniture")
-				if furniture:
-					if potential_furniture.furniture and potential_furniture.furniture.texture:
-						current_collider.shape.size = potential_furniture.furniture.texture.get_size()

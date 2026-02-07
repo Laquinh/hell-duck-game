@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="Furniture" load_steps=4 format=3 uid="uid://272yy31gtqfq"]
+[gd_resource type="Resource" script_class="Furniture" format=3 uid="uid://272yy31gtqfq"]
 
-[ext_resource type="Script" uid="uid://bkpcwp3jwvi2o" path="res://furniture/draggable-furniture.gd" id="1_b63fj"]
+[ext_resource type="Script" uid="uid://55cybm4mdsma" path="res://furniture/hanging-draggable-furniture.gd" id="1_b63fj"]
 [ext_resource type="Script" uid="uid://bc3hb7obss36a" path="res://furniture/furniture.gd" id="2_5ut2s"]
 [ext_resource type="Texture2D" uid="uid://xjamnp8r70st" path="res://furniture/sprites/8-string-guitar.png" id="3_b63fj"]
 

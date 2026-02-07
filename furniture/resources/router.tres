@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Furniture" load_steps=4 format=3 uid="uid://dqjmdt1lje36w"]
+[gd_resource type="Resource" script_class="Furniture" format=3 uid="uid://dqjmdt1lje36w"]
 
 [ext_resource type="Script" uid="uid://bkpcwp3jwvi2o" path="res://furniture/draggable-furniture.gd" id="1_5le5p"]
 [ext_resource type="Script" uid="uid://bc3hb7obss36a" path="res://furniture/furniture.gd" id="1_i4l48"]

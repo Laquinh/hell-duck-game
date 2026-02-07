@@ -7,14 +7,14 @@
 
 [node name="Node2D" type="Node2D" unique_id=1867009240]
 
-[node name="Player" parent="." unique_id=1541628567 instance=ExtResource("1_ig7tw")]
-position = Vector2(6, 1)
-
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1064791371]
 enabled = false
 zoom = Vector2(3, 3)
 
 [node name="House" parent="." unique_id=186749800 instance=ExtResource("2_0xm2m")]
+
+[node name="Player" parent="." unique_id=1541628567 instance=ExtResource("1_ig7tw")]
+position = Vector2(-175, 40)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=942204330]
 process_mode = 3
