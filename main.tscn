@@ -1,25 +1,25 @@
-[gd_scene load_steps=5 format=3 uid="uid://brk25ygn7iwxb"]
+[gd_scene format=3 uid="uid://brk25ygn7iwxb"]
 
 [ext_resource type="PackedScene" uid="uid://d1gpphkbcphic" path="res://player/player.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://darci4dxcv82f" path="res://house/house.tscn" id="2_0xm2m"]
 [ext_resource type="AudioStream" uid="uid://o3x5mqk7o3hu" path="res://background-music.mp3" id="3_h2yge"]
 [ext_resource type="PackedScene" uid="uid://di1o3b5isv8mo" path="res://pause-menu/pause_menu.tscn" id="4_1bvp3"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" unique_id=1867009240]
 
-[node name="Player" parent="." instance=ExtResource("1_ig7tw")]
+[node name="Player" parent="." unique_id=1541628567 instance=ExtResource("1_ig7tw")]
 position = Vector2(6, 1)
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1064791371]
 enabled = false
 zoom = Vector2(3, 3)
 
-[node name="House" parent="." instance=ExtResource("2_0xm2m")]
+[node name="House" parent="." unique_id=186749800 instance=ExtResource("2_0xm2m")]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=942204330]
 process_mode = 3
 stream = ExtResource("3_h2yge")
 autoplay = true
 playback_type = 1
 
-[node name="PauseMenu" parent="." instance=ExtResource("4_1bvp3")]
+[node name="PauseMenu" parent="." unique_id=110440989 instance=ExtResource("4_1bvp3")]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://d1gpphkbcphic"]
+[gd_scene format=3 uid="uid://d1gpphkbcphic"]
 
 [ext_resource type="Script" uid="uid://cshdedybrrd4v" path="res://player/player.gd" id="1_4flbx"]
 [ext_resource type="Texture2D" uid="uid://cocvkfx2nmj5q" path="res://player/sprites/ghost-idle.png" id="2_boad6"]
@@ -14,8 +14,10 @@ size = Vector2(24, 24)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rkbax"]
 size = Vector2(61, 59)
 
-[node name="Player" type="CharacterBody2D" groups=["Player"]]
+[node name="Player" type="CharacterBody2D" unique_id=896753530 groups=["Player"]]
 z_index = 1
+collision_layer = 3
+collision_mask = 2
 script = ExtResource("1_4flbx")
 idle_texture = ExtResource("2_boad6")
 up_texture = ExtResource("3_rgyib")
@@ -24,19 +26,19 @@ left_texture = ExtResource("5_8t03j")
 right_texture = ExtResource("6_2ieo8")
 speed = 100.0
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1349511313]
 modulate = Color(1, 1, 1, 0.91764706)
 texture = ExtResource("2_onrkg")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=525191540]
 zoom = Vector2(3, 3)
 position_smoothing_enabled = true
 position_smoothing_speed = 10.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1539346876]
 shape = SubResource("RectangleShape2D_sh265")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." unique_id=2012747974]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" groups=["Player"]]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2096188637 groups=["Player"]]
 shape = SubResource("RectangleShape2D_rkbax")

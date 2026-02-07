@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=3 uid="uid://darci4dxcv82f"]
+[gd_scene format=3 uid="uid://darci4dxcv82f"]
 
 [ext_resource type="Texture2D" uid="uid://2r6eq226gwit" path="res://house/sprites/house.png" id="1_g0npy"]
 [ext_resource type="PackedScene" uid="uid://qs60hkstdfot" path="res://furniture/furniture.tscn" id="2_t6m4b"]
@@ -64,356 +64,374 @@
 [ext_resource type="Resource" uid="uid://dwyqdin7gj86c" path="res://furniture/resources/trash-can.tres" id="46_0j7rm"]
 [ext_resource type="Resource" uid="uid://ewy11hqadxjt" path="res://furniture/resources/metal-seat.tres" id="47_6bigr"]
 [ext_resource type="Resource" uid="uid://dic2pc37fsujy" path="res://npc/resources/average-guy.tres" id="64_sfqip"]
+[ext_resource type="Script" uid="uid://cvl8yrd004ddu" path="res://utils/CreateCollisionFromImage.gd" id="65_3r6ed"]
+[ext_resource type="Texture2D" uid="uid://vqwafslt118n" path="res://house/sprites/house-collisions-ghost.png" id="66_1vfu0"]
+[ext_resource type="Texture2D" uid="uid://bmdj67bwte6lv" path="res://house/sprites/house-collisions-furniture.png" id="66_jjuaq"]
 
-[node name="House" type="Node2D"]
+[node name="House" type="Node2D" unique_id=1690959270]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(107.98338, -126.14622)
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1971291613]
 texture = ExtResource("1_g0npy")
-offset = Vector2(-107.98338, 126.14622)
 
-[node name="Armchair" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair" parent="." unique_id=1647839962 instance=ExtResource("2_t6m4b")]
 position = Vector2(-179, -89.5)
 furniture = ExtResource("3_t6m4b")
 
-[node name="Armchair2" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair2" parent="." unique_id=110963923 instance=ExtResource("2_t6m4b")]
 position = Vector2(120, -82.5)
 furniture = ExtResource("4_c6gah")
 
-[node name="Armchair57" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair57" parent="." unique_id=1725961875 instance=ExtResource("2_t6m4b")]
 position = Vector2(271, 29.5)
 furniture = ExtResource("5_74nv0")
 
-[node name="Armchair58" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair58" parent="." unique_id=396158517 instance=ExtResource("2_t6m4b")]
 position = Vector2(91, 22.5)
 furniture = ExtResource("6_h88wi")
 
-[node name="Armchair59" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair59" parent="." unique_id=1049513453 instance=ExtResource("2_t6m4b")]
 position = Vector2(127, 35.5)
 furniture = ExtResource("7_k2747")
 
-[node name="Armchair60" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair60" parent="." unique_id=853196090 instance=ExtResource("2_t6m4b")]
 position = Vector2(176, 50)
 furniture = ExtResource("8_algho")
 
-[node name="Armchair61" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair61" parent="." unique_id=465075209 instance=ExtResource("2_t6m4b")]
 position = Vector2(165, 20.5)
 furniture = ExtResource("9_xyhon")
 
-[node name="Armchair63" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair63" parent="." unique_id=1849153029 instance=ExtResource("2_t6m4b")]
 position = Vector2(190, 26.5)
 furniture = ExtResource("10_0kr46")
 
-[node name="Armchair64" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair64" parent="." unique_id=695569564 instance=ExtResource("2_t6m4b")]
 position = Vector2(211, 40.5)
 furniture = ExtResource("11_7k1m4")
 
-[node name="Armchair62" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair62" parent="." unique_id=1915560486 instance=ExtResource("2_t6m4b")]
 position = Vector2(130, -13)
 furniture = ExtResource("12_m5u2c")
 
-[node name="Armchair65" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair65" parent="." unique_id=1626404226 instance=ExtResource("2_t6m4b")]
 position = Vector2(197.5, -46.5)
 furniture = ExtResource("13_xyhon")
 
-[node name="Armchair24" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair24" parent="." unique_id=1089833204 instance=ExtResource("2_t6m4b")]
 position = Vector2(102.5, -126)
 furniture = ExtResource("5_twhqx")
 
-[node name="Armchair29" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair29" parent="." unique_id=507317829 instance=ExtResource("2_t6m4b")]
 position = Vector2(102.5, -149)
 furniture = ExtResource("5_twhqx")
 
-[node name="Armchair18" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair18" parent="." unique_id=531666465 instance=ExtResource("2_t6m4b")]
 position = Vector2(302, -88.5)
 furniture = ExtResource("5_0sddx")
 
-[node name="Armchair19" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair19" parent="." unique_id=602685639 instance=ExtResource("2_t6m4b")]
 position = Vector2(215, -88.5)
 furniture = ExtResource("5_0sddx")
 
-[node name="Armchair21" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair21" parent="." unique_id=105702210 instance=ExtResource("2_t6m4b")]
 position = Vector2(215, -173)
 furniture = ExtResource("6_7x6g6")
 
-[node name="Armchair22" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair22" parent="." unique_id=653297088 instance=ExtResource("2_t6m4b")]
 position = Vector2(302, -173)
 furniture = ExtResource("6_7x6g6")
 
-[node name="Armchair23" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair23" parent="." unique_id=1657549791 instance=ExtResource("2_t6m4b")]
 position = Vector2(258.5, -173)
 furniture = ExtResource("7_7t6lh")
 
-[node name="Armchair20" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair20" parent="." unique_id=2037587778 instance=ExtResource("2_t6m4b")]
 position = Vector2(258.5, -89)
 furniture = ExtResource("6_2oa6t")
 
-[node name="Armchair25" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair25" parent="." unique_id=1577915316 instance=ExtResource("2_t6m4b")]
 position = Vector2(270, -118)
 furniture = ExtResource("9_fw4yn")
 
-[node name="Armchair26" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair26" parent="." unique_id=1801671609 instance=ExtResource("2_t6m4b")]
 position = Vector2(223, -114)
 furniture = ExtResource("10_mlmoe")
 
-[node name="Armchair27" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair27" parent="." unique_id=527948078 instance=ExtResource("2_t6m4b")]
 position = Vector2(295, -114)
 furniture = ExtResource("6_mpj70")
 
-[node name="Armchair28" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair28" parent="." unique_id=2095835281 instance=ExtResource("2_t6m4b")]
 position = Vector2(312, -114)
 furniture = ExtResource("7_gkkdt")
 
-[node name="Armchair3" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair3" parent="." unique_id=1665429425 instance=ExtResource("2_t6m4b")]
 position = Vector2(82, -101)
 furniture = ExtResource("5_43e1r")
 
-[node name="Armchair30" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair30" parent="." unique_id=1054033863 instance=ExtResource("2_t6m4b")]
 position = Vector2(80, -151)
 furniture = ExtResource("5_43e1r")
 
-[node name="Armchair31" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair31" parent="." unique_id=85734299 instance=ExtResource("2_t6m4b")]
 position = Vector2(88, -151)
 furniture = ExtResource("5_43e1r")
 
-[node name="Armchair32" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair32" parent="." unique_id=2132760860 instance=ExtResource("2_t6m4b")]
 position = Vector2(96, -151)
 furniture = ExtResource("5_43e1r")
 
-[node name="Armchair36" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair36" parent="." unique_id=334796265 instance=ExtResource("2_t6m4b")]
 position = Vector2(122, -155)
 furniture = ExtResource("15_aofqu")
 
-[node name="Armchair42" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair42" parent="." unique_id=1677254581 instance=ExtResource("2_t6m4b")]
 position = Vector2(161.5, -177)
 furniture = ExtResource("16_ct270")
 
-[node name="Armchair43" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair43" parent="." unique_id=1743166573 instance=ExtResource("2_t6m4b")]
 position = Vector2(96.5, -177)
 furniture = ExtResource("16_ct270")
 
-[node name="Armchair37" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair37" parent="." unique_id=1487918749 instance=ExtResource("2_t6m4b")]
 position = Vector2(107, -155)
 furniture = ExtResource("15_aofqu")
 
-[node name="Armchair33" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair33" parent="." unique_id=1295038785 instance=ExtResource("2_t6m4b")]
 position = Vector2(125, -128)
 furniture = ExtResource("5_43e1r")
 
-[node name="Armchair34" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair34" parent="." unique_id=1074827143 instance=ExtResource("2_t6m4b")]
 position = Vector2(117, -128)
 furniture = ExtResource("5_43e1r")
 
-[node name="Armchair35" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair35" parent="." unique_id=1677867162 instance=ExtResource("2_t6m4b")]
 position = Vector2(109, -128)
 furniture = ExtResource("5_43e1r")
 
-[node name="Armchair39" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair39" parent="." unique_id=1829348918 instance=ExtResource("2_t6m4b")]
 position = Vector2(80.5, -129.5)
 furniture = ExtResource("16_aofqu")
 
-[node name="Armchair40" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair40" parent="." unique_id=1197095219 instance=ExtResource("2_t6m4b")]
 position = Vector2(90.5, -129.5)
 furniture = ExtResource("16_aofqu")
 
-[node name="Armchair7" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair7" parent="." unique_id=1494540764 instance=ExtResource("2_t6m4b")]
 position = Vector2(92, -101)
 furniture = ExtResource("5_43e1r")
 
-[node name="Armchair15" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair15" parent="." unique_id=1729828080 instance=ExtResource("2_t6m4b")]
 position = Vector2(122, -101)
 furniture = ExtResource("5_43e1r")
 
-[node name="Armchair16" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair16" parent="." unique_id=1025034918 instance=ExtResource("2_t6m4b")]
 position = Vector2(108, -102)
 furniture = ExtResource("6_mpj70")
 
-[node name="Armchair13" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair13" parent="." unique_id=2061006224 instance=ExtResource("2_t6m4b")]
 position = Vector2(156, -101)
 furniture = ExtResource("5_43e1r")
 
-[node name="Armchair14" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair14" parent="." unique_id=149337311 instance=ExtResource("2_t6m4b")]
 position = Vector2(146, -104.5)
 furniture = ExtResource("7_cu6ax")
 
-[node name="Armchair38" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair38" parent="." unique_id=1352609999 instance=ExtResource("2_t6m4b")]
 position = Vector2(100.5, -131.5)
 furniture = ExtResource("7_cu6ax")
 
-[node name="Armchair17" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair17" parent="." unique_id=668890417 instance=ExtResource("2_t6m4b")]
 position = Vector2(134.24638, -104.5)
 furniture = ExtResource("8_ll3f3")
 
-[node name="Armchair66" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair66" parent="." unique_id=1995378943 instance=ExtResource("2_t6m4b")]
 position = Vector2(146, -14)
 furniture = ExtResource("8_ll3f3")
 
-[node name="Armchair67" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair67" parent="." unique_id=1458025870 instance=ExtResource("2_t6m4b")]
 position = Vector2(158, -10)
 furniture = ExtResource("29_7k1m4")
 
-[node name="Armchair68" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair68" parent="." unique_id=340229564 instance=ExtResource("2_t6m4b")]
 position = Vector2(145, -4)
 furniture = ExtResource("30_m5u2c")
 
-[node name="Fridge" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Fridge" parent="." unique_id=1042657292 instance=ExtResource("2_t6m4b")]
 position = Vector2(-300.5, -117.5)
 furniture = ExtResource("4_jp2re")
 
-[node name="Table" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Table" parent="." unique_id=1052450442 instance=ExtResource("2_t6m4b")]
 position = Vector2(-251, -85)
 furniture = ExtResource("5_65n3d")
 
-[node name="Armchair4" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair4" parent="." unique_id=888763501 instance=ExtResource("2_t6m4b")]
 position = Vector2(-265, -109.5)
 furniture = ExtResource("6_uxrrs")
 
-[node name="Armchair5" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair5" parent="." unique_id=741633264 instance=ExtResource("2_t6m4b")]
 position = Vector2(-239, -106.5)
 furniture = ExtResource("7_gkkdt")
 
-[node name="Armchair6" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair6" parent="." unique_id=1384815227 instance=ExtResource("2_t6m4b")]
 position = Vector2(-257, -75)
 furniture = ExtResource("8_7f618")
 
-[node name="Armchair41" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair41" parent="." unique_id=1010242675 instance=ExtResource("2_t6m4b")]
 position = Vector2(-271, 38)
 furniture = ExtResource("24_xe14b")
 
-[node name="Armchair69" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair69" parent="." unique_id=40257804 instance=ExtResource("2_t6m4b")]
 position = Vector2(-268.5, 165)
 furniture = ExtResource("36_clihy")
 
-[node name="Armchair70" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair70" parent="." unique_id=83686721 instance=ExtResource("2_t6m4b")]
 position = Vector2(-217, 188)
 furniture = ExtResource("37_oo7en")
 
-[node name="Armchair71" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair71" parent="." unique_id=259290242 instance=ExtResource("2_t6m4b")]
 position = Vector2(-291.5, 113.5)
 furniture = ExtResource("38_vvcth")
 
-[node name="Armchair72" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair72" parent="." unique_id=149022510 instance=ExtResource("2_t6m4b")]
 position = Vector2(-266.5, 113.5)
 furniture = ExtResource("39_aueej")
 
-[node name="Armchair73" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair73" parent="." unique_id=1984980857 instance=ExtResource("2_t6m4b")]
 position = Vector2(-241.5, 113.5)
 furniture = ExtResource("40_u7nrj")
 
-[node name="Armchair74" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair74" parent="." unique_id=391560698 instance=ExtResource("2_t6m4b")]
 position = Vector2(-192.5, 85)
 furniture = ExtResource("41_oo7en")
 
-[node name="Armchair75" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair75" parent="." unique_id=1851140532 instance=ExtResource("2_t6m4b")]
 position = Vector2(-181, 170.5)
 furniture = ExtResource("42_aueej")
 
-[node name="Armchair76" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair76" parent="." unique_id=1739808836 instance=ExtResource("2_t6m4b")]
 position = Vector2(-165, 165.5)
 furniture = ExtResource("43_u7nrj")
 
-[node name="Armchair77" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair77" parent="." unique_id=1772037929 instance=ExtResource("2_t6m4b")]
 position = Vector2(-127, 120)
 furniture = ExtResource("44_sj5t4")
 
-[node name="Armchair78" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair78" parent="." unique_id=1155368397 instance=ExtResource("2_t6m4b")]
 position = Vector2(-104, 120)
 furniture = ExtResource("45_0j7rm")
 
-[node name="Armchair79" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair79" parent="." unique_id=761101311 instance=ExtResource("2_t6m4b")]
 position = Vector2(81, 178.5)
 furniture = ExtResource("46_0j7rm")
 
-[node name="Armchair80" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair80" parent="." unique_id=1839443328 instance=ExtResource("2_t6m4b")]
 position = Vector2(275, 180)
 furniture = ExtResource("47_6bigr")
 
-[node name="Armchair81" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair81" parent="." unique_id=784141015 instance=ExtResource("2_t6m4b")]
 position = Vector2(192, 180)
 furniture = ExtResource("47_6bigr")
 
-[node name="Armchair44" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair44" parent="." unique_id=676018071 instance=ExtResource("2_t6m4b")]
 position = Vector2(-288, -24.5)
 furniture = ExtResource("25_xxn46")
 
-[node name="Armchair50" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair50" parent="." unique_id=502583622 instance=ExtResource("2_t6m4b")]
 position = Vector2(-96, 8.5)
 furniture = ExtResource("25_xxn46")
 
-[node name="Armchair51" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair51" parent="." unique_id=169268214 instance=ExtResource("2_t6m4b")]
 position = Vector2(-92, -11)
 furniture = ExtResource("26_1u7xo")
 
-[node name="Armchair45" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair45" parent="." unique_id=31984497 instance=ExtResource("2_t6m4b")]
 position = Vector2(-295, -37)
 furniture = ExtResource("26_i7ajr")
 
-[node name="Armchair46" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair46" parent="." unique_id=1932469983 instance=ExtResource("2_t6m4b")]
 position = Vector2(-273, -37.5)
 furniture = ExtResource("27_1u7xo")
 
-[node name="Armchair47" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair47" parent="." unique_id=1049035071 instance=ExtResource("2_t6m4b")]
 position = Vector2(-203, 54.5)
 furniture = ExtResource("27_1u7xo")
 
-[node name="Armchair48" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair48" parent="." unique_id=954207139 instance=ExtResource("2_t6m4b")]
 position = Vector2(-146, 54.5)
 furniture = ExtResource("27_1u7xo")
 
-[node name="Armchair55" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair55" parent="." unique_id=1765072456 instance=ExtResource("2_t6m4b")]
 position = Vector2(-129, 38)
 furniture = ExtResource("29_wr8le")
 
-[node name="Armchair56" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair56" parent="." unique_id=539752808 instance=ExtResource("2_t6m4b")]
 position = Vector2(-169, -50)
 furniture = ExtResource("30_74nv0")
 
-[node name="Armchair54" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair54" parent="." unique_id=2046091778 instance=ExtResource("2_t6m4b")]
 position = Vector2(-114, 34.5)
 furniture = ExtResource("27_1u7xo")
 
-[node name="Armchair49" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair49" parent="." unique_id=1058756260 instance=ExtResource("2_t6m4b")]
 position = Vector2(-96, 54)
 furniture = ExtResource("29_esxab")
 
-[node name="Armchair52" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair52" parent="." unique_id=1313611860 instance=ExtResource("2_t6m4b")]
 position = Vector2(-96, 35.5)
 furniture = ExtResource("30_1u7xo")
 
-[node name="Armchair53" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair53" parent="." unique_id=324119711 instance=ExtResource("2_t6m4b")]
 position = Vector2(-78, 40.5)
 furniture = ExtResource("7_gkkdt")
 
-[node name="Calendar" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Calendar" parent="." unique_id=1850856480 instance=ExtResource("2_t6m4b")]
 position = Vector2(-264, -138)
 furniture = ExtResource("9_0ndow")
 
-[node name="Armchair8" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair8" parent="." unique_id=308527546 instance=ExtResource("2_t6m4b")]
 position = Vector2(-291, -172.5)
 furniture = ExtResource("5_ahhpa")
 
-[node name="Armchair9" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair9" parent="." unique_id=834638443 instance=ExtResource("2_t6m4b")]
 position = Vector2(-193, -176)
 furniture = ExtResource("11_c6gah")
 
-[node name="Armchair10" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair10" parent="." unique_id=1716598038 instance=ExtResource("2_t6m4b")]
 position = Vector2(-144, -73)
 furniture = ExtResource("11_hahy1")
 
-[node name="Armchair11" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair11" parent="." unique_id=234115922 instance=ExtResource("2_t6m4b")]
 position = Vector2(-103, -77)
 furniture = ExtResource("12_c6gah")
 
-[node name="Armchair12" parent="." instance=ExtResource("2_t6m4b")]
+[node name="Armchair12" parent="." unique_id=282514917 instance=ExtResource("2_t6m4b")]
 position = Vector2(-103, -102.5)
 furniture = ExtResource("13_43e1r")
 
-[node name="PoshLady" parent="." node_paths=PackedStringArray("scary_furniture") instance=ExtResource("4_q8k63")]
+[node name="PoshLady" parent="." unique_id=529674023 node_paths=PackedStringArray("scary_furniture") instance=ExtResource("4_q8k63")]
 position = Vector2(190, -110)
 npc = ExtResource("5_mkffg")
 scary_furniture = [NodePath("../Armchair")]
 
-[node name="AverageGuy" parent="." node_paths=PackedStringArray("scary_furniture") instance=ExtResource("4_q8k63")]
+[node name="AverageGuy" parent="." unique_id=1450201444 node_paths=PackedStringArray("scary_furniture") instance=ExtResource("4_q8k63")]
 position = Vector2(-213, -112)
 npc = ExtResource("64_sfqip")
 scary_furniture = [NodePath("../Armchair")]
+
+[node name="Ghost collision" type="StaticBody2D" parent="." unique_id=729969179]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("65_3r6ed")
+texture = ExtResource("66_1vfu0")
+
+[node name="@CollisionPolygon2D@72931" type="CollisionPolygon2D" parent="Ghost collision" unique_id=1744655805]
+polygon = PackedVector2Array(-326, 198, 326, 198, 326, 195, -323, 195, -323, -195, 323, -195, 323, 194, 326, 194, 326, -198, -326, -198)
+
+[node name="Furniture collision" type="StaticBody2D" parent="." unique_id=2071910858]
+collision_mask = 0
+script = ExtResource("65_3r6ed")
+texture = ExtResource("66_jjuaq")
+
+[node name="@CollisionPolygon2D@71606" type="CollisionPolygon2D" parent="Furniture collision" unique_id=206881434]
+polygon = PackedVector2Array(-326, 198, 326, 198, 326, 195, -323, 195, -323, 67, -67, 67, -67, 112, -64, 112, -64, 64, -323, 64, -323, -64, -67, -64, -67, -19, -64, -19, -64, -67, -323, -67, -323, -195, -67, -195, -67, -150, -64, -150, -64, -195, 64, -195, 64, -150, 67, -150, 67, -195, 323, -195, 323, -67, 64, -67, 64, -19, 67, -19, 67, -64, 323, -64, 323, 64, 64, 64, 64, 112, 67, 112, 67, 67, 323, 67, 323, 194, 326, 194, 326, -198, -326, -198)
