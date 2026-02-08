@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Furniture" format=3 uid="uid://dtcppwveqvehb"]
 
-[ext_resource type="Script" uid="uid://55cybm4mdsma" path="res://furniture/hanging-draggable-furniture.gd" id="1_tcc84"]
+[ext_resource type="Script" uid="uid://befm7xc4wli00" path="res://furniture/hanging_furniture.gd" id="1_tcc84"]
 [ext_resource type="Script" uid="uid://bc3hb7obss36a" path="res://furniture/furniture.gd" id="2_072tn"]
 [ext_resource type="Texture2D" uid="uid://cydiivkpbm1q3" path="res://furniture/sprites/lamp-black.png" id="3_tcc84"]
 

@@ -2,14 +2,13 @@
 
 [ext_resource type="Script" uid="uid://cshdedybrrd4v" path="res://player/player.gd" id="1_4flbx"]
 [ext_resource type="Texture2D" uid="uid://cocvkfx2nmj5q" path="res://player/sprites/ghost-idle.png" id="2_boad6"]
-[ext_resource type="Texture2D" uid="uid://dylpn1fstocga" path="res://player/ghost.png" id="2_onrkg"]
 [ext_resource type="Texture2D" uid="uid://dxictor76ffag" path="res://player/sprites/ghost-up.png" id="3_rgyib"]
 [ext_resource type="Texture2D" uid="uid://dl2d6u6bwdls5" path="res://player/sprites/ghost-down.png" id="4_hg6s5"]
 [ext_resource type="Texture2D" uid="uid://c5qalnwb8u6wt" path="res://player/sprites/ghost-left.png" id="5_8t03j"]
 [ext_resource type="Texture2D" uid="uid://bqyulk6em4wrt" path="res://player/sprites/ghost-right.png" id="6_2ieo8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sh265"]
-size = Vector2(24, 24)
+size = Vector2(16, 34)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rkbax"]
 size = Vector2(61, 59)
@@ -28,7 +27,7 @@ speed = 100.0
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1349511313]
 modulate = Color(1, 1, 1, 0.91764706)
-texture = ExtResource("2_onrkg")
+texture = ExtResource("2_boad6")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=525191540]
 zoom = Vector2(3, 3)

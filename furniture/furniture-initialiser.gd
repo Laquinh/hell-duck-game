@@ -10,19 +10,21 @@ extends RigidBody2D
 			
 @onready var sprite: Sprite2D = $Area2D/Sprite2D
 @onready var interaction_box: CollisionShape2D = $Area2D/CollisionShape2D
+var collision_pollygons: Array[CollisionPolygon2D] = []
 var behavior: FurnitureBehavior = null
+var mass_multiplier: float = 3
 
 @export_tool_button("Refresh", "Callable") var generate_collision_action = _ready
 func _ready():
 	if furniture:
 		if furniture.texture:
 			interaction_box.shape.size = furniture.texture.get_size() + furniture.interaction_box_padding
-			mass = furniture.texture.get_size().length() * 5
-		sprite.texture = furniture.texture
+			mass = furniture.texture.get_size().x * furniture.texture.get_size().y * mass_multiplier
+			sprite.texture = furniture.texture
+			collision_pollygons = CollisionShape.apply_to_node(self, CollisionShape.generate_from_texture(sprite.texture))
 		if furniture.furniture_behavior:
 			behavior = furniture.furniture_behavior.new()
 			add_child(behavior)
 			var is_editor = Engine.is_editor_hint()
 			behavior.set_process(!is_editor)
 			behavior.set_physics_process(!is_editor)
-	CollisionShape.apply_to_node(self, CollisionShape.generate_from_texture(sprite.texture))
