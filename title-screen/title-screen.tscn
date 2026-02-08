@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://bblax5au1s8dv"]
+
+[ext_resource type="Texture2D" uid="uid://db3mgwewrjcon" path="res://title-screen/title-screen.png" id="1_vt7gb"]
+[ext_resource type="Script" uid="uid://dnk6l7hnfuer2" path="res://title-screen/title-screen.gd" id="2_7rx3x"]
+
+[node name="TitleScreen" type="Control" unique_id=1057655868]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_7rx3x")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=407392677]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_vt7gb")
+
+[node name="StartButton" type="Button" parent="." unique_id=688671858]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 724.0
+offset_top = 386.0
+offset_right = 992.0
+offset_bottom = 580.0
+
+[node name="ExitButton" type="Button" parent="." unique_id=1478533172]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 196.0
+offset_top = 403.0
+offset_right = 479.0
+offset_bottom = 504.0
+
+[connection signal="button_down" from="StartButton" to="." method="_start_game"]
+[connection signal="button_down" from="ExitButton" to="." method="_quit_game"]

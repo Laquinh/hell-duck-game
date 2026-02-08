@@ -67,6 +67,7 @@
 [ext_resource type="Script" uid="uid://cvl8yrd004ddu" path="res://utils/CreateCollisionFromImage.gd" id="65_3r6ed"]
 [ext_resource type="Texture2D" uid="uid://vqwafslt118n" path="res://house/sprites/house-collisions-ghost.png" id="66_1vfu0"]
 [ext_resource type="Texture2D" uid="uid://bmdj67bwte6lv" path="res://house/sprites/house-collisions-furniture.png" id="66_jjuaq"]
+[ext_resource type="Texture2D" uid="uid://cyrpmscviy5u4" path="res://house/sprites/house_background.png" id="68_f2gol"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_1vfu0"]
 friction = 0.2
@@ -93,6 +94,7 @@ furniture = ExtResource("5_74nv0")
 
 [node name="Armchair58" parent="." unique_id=396158517 instance=ExtResource("2_t6m4b")]
 position = Vector2(91, 22.5)
+freeze = true
 furniture = ExtResource("6_h88wi")
 
 [node name="Armchair59" parent="." unique_id=1049513453 instance=ExtResource("2_t6m4b")]
@@ -121,14 +123,17 @@ furniture = ExtResource("12_m5u2c")
 
 [node name="Armchair65" parent="." unique_id=1626404226 instance=ExtResource("2_t6m4b")]
 position = Vector2(197.5, -46.5)
+freeze = true
 furniture = ExtResource("13_xyhon")
 
 [node name="Armchair24" parent="." unique_id=1089833204 instance=ExtResource("2_t6m4b")]
 position = Vector2(102.5, -126)
+freeze = true
 furniture = ExtResource("5_twhqx")
 
 [node name="Armchair29" parent="." unique_id=507317829 instance=ExtResource("2_t6m4b")]
 position = Vector2(102.5, -149)
+freeze = true
 furniture = ExtResource("5_twhqx")
 
 [node name="Armchair18" parent="." unique_id=531666465 instance=ExtResource("2_t6m4b")]
@@ -141,14 +146,17 @@ furniture = ExtResource("5_0sddx")
 
 [node name="Armchair21" parent="." unique_id=105702210 instance=ExtResource("2_t6m4b")]
 position = Vector2(215, -173)
+freeze = true
 furniture = ExtResource("6_7x6g6")
 
 [node name="Armchair22" parent="." unique_id=653297088 instance=ExtResource("2_t6m4b")]
 position = Vector2(302, -173)
+freeze = true
 furniture = ExtResource("6_7x6g6")
 
 [node name="Armchair23" parent="." unique_id=1657549791 instance=ExtResource("2_t6m4b")]
 position = Vector2(258.5, -173)
+freeze = true
 furniture = ExtResource("7_7t6lh")
 
 [node name="Armchair20" parent="." unique_id=2037587778 instance=ExtResource("2_t6m4b")]
@@ -193,10 +201,12 @@ furniture = ExtResource("15_aofqu")
 
 [node name="Armchair42" parent="." unique_id=1677254581 instance=ExtResource("2_t6m4b")]
 position = Vector2(161.5, -177)
+freeze = true
 furniture = ExtResource("16_ct270")
 
 [node name="Armchair43" parent="." unique_id=1743166573 instance=ExtResource("2_t6m4b")]
 position = Vector2(96.5, -177)
+freeze = true
 furniture = ExtResource("16_ct270")
 
 [node name="Armchair37" parent="." unique_id=1487918749 instance=ExtResource("2_t6m4b")]
@@ -261,6 +271,7 @@ furniture = ExtResource("29_7k1m4")
 
 [node name="Armchair68" parent="." unique_id=340229564 instance=ExtResource("2_t6m4b")]
 position = Vector2(145, -4)
+freeze = true
 furniture = ExtResource("30_m5u2c")
 
 [node name="Fridge" parent="." unique_id=1042657292 instance=ExtResource("2_t6m4b")]
@@ -297,18 +308,22 @@ furniture = ExtResource("37_oo7en")
 
 [node name="Armchair71" parent="." unique_id=259290242 instance=ExtResource("2_t6m4b")]
 position = Vector2(-291.5, 113.5)
+freeze = true
 furniture = ExtResource("38_vvcth")
 
 [node name="Armchair72" parent="." unique_id=149022510 instance=ExtResource("2_t6m4b")]
 position = Vector2(-266.5, 113.5)
+freeze = true
 furniture = ExtResource("39_aueej")
 
 [node name="Armchair73" parent="." unique_id=1984980857 instance=ExtResource("2_t6m4b")]
 position = Vector2(-241.5, 113.5)
+freeze = true
 furniture = ExtResource("40_u7nrj")
 
 [node name="Armchair74" parent="." unique_id=391560698 instance=ExtResource("2_t6m4b")]
 position = Vector2(-192.5, 85)
+freeze = true
 furniture = ExtResource("41_oo7en")
 
 [node name="Armchair75" parent="." unique_id=1851140532 instance=ExtResource("2_t6m4b")]
@@ -321,10 +336,12 @@ furniture = ExtResource("43_u7nrj")
 
 [node name="Armchair77" parent="." unique_id=1772037929 instance=ExtResource("2_t6m4b")]
 position = Vector2(-127, 120)
+freeze = true
 furniture = ExtResource("44_sj5t4")
 
 [node name="Armchair78" parent="." unique_id=1155368397 instance=ExtResource("2_t6m4b")]
 position = Vector2(-104, 120)
+freeze = true
 furniture = ExtResource("45_0j7rm")
 
 [node name="Armchair79" parent="." unique_id=761101311 instance=ExtResource("2_t6m4b")]
@@ -341,10 +358,12 @@ furniture = ExtResource("47_6bigr")
 
 [node name="Armchair44" parent="." unique_id=676018071 instance=ExtResource("2_t6m4b")]
 position = Vector2(-288, -24.5)
+freeze = true
 furniture = ExtResource("25_xxn46")
 
 [node name="Armchair50" parent="." unique_id=502583622 instance=ExtResource("2_t6m4b")]
 position = Vector2(-96, 8.5)
+freeze = true
 furniture = ExtResource("25_xxn46")
 
 [node name="Armchair51" parent="." unique_id=169268214 instance=ExtResource("2_t6m4b")]
@@ -373,6 +392,7 @@ furniture = ExtResource("29_wr8le")
 
 [node name="Armchair56" parent="." unique_id=539752808 instance=ExtResource("2_t6m4b")]
 position = Vector2(-169, -50)
+freeze = true
 furniture = ExtResource("30_74nv0")
 
 [node name="Armchair54" parent="." unique_id=2046091778 instance=ExtResource("2_t6m4b")]
@@ -393,6 +413,7 @@ furniture = ExtResource("7_gkkdt")
 
 [node name="Calendar" parent="." unique_id=1850856480 instance=ExtResource("2_t6m4b")]
 position = Vector2(-264, -138)
+freeze = true
 furniture = ExtResource("9_0ndow")
 
 [node name="Armchair8" parent="." unique_id=308527546 instance=ExtResource("2_t6m4b")]
@@ -401,6 +422,7 @@ furniture = ExtResource("5_ahhpa")
 
 [node name="Armchair9" parent="." unique_id=834638443 instance=ExtResource("2_t6m4b")]
 position = Vector2(-165, -176)
+freeze = true
 furniture = ExtResource("11_c6gah")
 
 [node name="Armchair10" parent="." unique_id=1716598038 instance=ExtResource("2_t6m4b")]
@@ -444,3 +466,7 @@ texture = ExtResource("66_jjuaq")
 
 [node name="@CollisionPolygon2D@94549" type="CollisionPolygon2D" parent="Furniture collision" unique_id=1307793029]
 polygon = PackedVector2Array(-326, 198, 326, 198, 326, 195, -323, 195, -323, 67, -67, 67, -67, 112, -64, 112, -64, 67, 8, 67, 8, 64, -323, 64, -323, -64, -67, -64, -67, -19, -64, -19, -64, -64, 8, -64, 8, -67, -323, -67, -323, -195, -67, -195, -67, -150, -64, -150, -64, -195, 64, -195, 64, -150, 67, -150, 67, -195, 323, -195, 323, -67, 64, -67, 64, -19, 67, -19, 67, -64, 323, -64, 323, 64, 64, 64, 64, 112, 67, 112, 67, 67, 323, 67, 323, 194, 326, 194, 326, -198, -326, -198)
+
+[node name="HouseBackground" type="Sprite2D" parent="." unique_id=1446484169]
+z_index = -1
+texture = ExtResource("68_f2gol")

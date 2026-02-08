@@ -17,11 +17,11 @@ func _ready():
 	if furniture:
 		if furniture.texture:
 			interaction_box.shape.size = furniture.texture.get_size() + furniture.interaction_box_padding
+			mass = furniture.texture.get_size().length() * 5
 		sprite.texture = furniture.texture
 		if furniture.furniture_behavior:
 			behavior = furniture.furniture_behavior.new()
 			add_child(behavior)
-		
 			var is_editor = Engine.is_editor_hint()
 			behavior.set_process(!is_editor)
 			behavior.set_physics_process(!is_editor)

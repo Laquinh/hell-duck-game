@@ -1,5 +1,5 @@
 @abstract class_name FurnitureBehavior
-extends RigidBody2D
+extends Node2D
 
 var is_possessed: bool = false:
 	set(value):
